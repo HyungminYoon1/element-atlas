@@ -4,13 +4,14 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <meta name="description" content="주기율표의 118개 원소와 실제 표본 사진, 전자배치, 결정 자료를 탐색하고 다양한 화학 문제를 풀어보세요.">
-  <title>ELEMENT ATLAS · 원소 도감</title><link rel="icon" href="assets/icon.svg"><link rel="stylesheet" href="styles.css"><script type="module" src="src/app.js"></script>
+  <title>ELEMENT ATLAS · 원소 도감</title><link rel="icon" href="assets/icon.svg"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="learning.css"><script type="module" src="src/app.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">본문으로</a>
-  <header class="masthead"><a class="brand" href="./"><span class="brand-mark">Ea</span><span>ELEMENT ATLAS<small>원소 도감</small></span></a><nav aria-label="주 메뉴"><button data-tab="explore" aria-current="page">주기율표</button><button data-tab="practice">문제 풀기</button><button data-tab="notebook">학습 기록</button><button data-tab="sources">자료 출처</button></nav><a class="lab-link" href="https://hyungminyoon1.github.io/web-lab/">WEB LAB ↗</a></header>
+  <header class="masthead"><a class="brand" href="./"><span class="brand-mark">Ea</span><span>ELEMENT ATLAS<small>원소 도감</small></span></a><nav aria-label="주 메뉴"><button data-tab="learn" aria-current="page">학습 길잡이</button><button data-tab="explore">주기율표</button><button data-tab="practice">문제 풀기</button><button data-tab="notebook">학습 기록</button><button data-tab="sources">자료 출처</button></nav><a class="lab-link" href="https://hyungminyoon1.github.io/web-lab/">WEB LAB ↗</a></header>
   <main id="main">
-    <section id="explore" class="panel">
+    <section id="learn" class="panel"><div id="learning"><h1>원소를 이해하는 순서</h1><p>입자 수 → 전자 상태 → 전자배치 → 결합 → 구조와 물성</p></div><noscript><p>대화형 학습은 JavaScript를 켜면 사용할 수 있습니다. <a href="https://openstax.org/books/chemistry-2e/pages/6-introduction">전자 구조와 주기적 성질 원문</a></p></noscript></section>
+    <section id="explore" class="panel" hidden>
       <div class="hero"><div><p class="eyebrow">THE PERIODIC COLLECTION</p><h1>원소 도감</h1><p class="lead">원소의 표본, 전자배치, 물성과 결정 구조.</p><div id="coverage" class="coverage"></div><p id="photo-coverage-note" class="small"></p><button id="jump-practice" class="primary">문제 풀기 →</button></div><button id="featured" class="featured" aria-label="구리 상세 정보"><img id="feature-image" alt="자연 구리 표본" src="assets/elements/cu.jpg"><span class="feature-caption"><span>29</span><strong>Cu</strong><span>구리 · Copper</span><span class="photo-credit">실제 표본 · 자세히 보기 ↗</span></span></button></div>
       <section class="phase-section" aria-labelledby="phase-heading"><div class="section-heading"><h2 id="phase-heading">기체도 다른 상태로 보기</h2><span>액체·고체 표본</span></div><div id="phase-collection" class="phase-collection"></div></section>
       <div class="section-heading"><h2>주기율표</h2><span id="match-count"></span></div>

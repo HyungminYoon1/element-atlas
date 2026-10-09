@@ -1,5 +1,12 @@
 # Verification — 2026-10-09
 
+## 2026-10-10 개념 학습 경로 — LOCAL
+
+- SOURCE VERIFIED: architecture/requirements/README/decisions, 기존 원소·문제·사진 UI와 이번 학습 모듈/테스트/정적 검사를 검토했습니다. 기존 118원소 수치·97종 사진 100장·결정 데이터는 변경하지 않았습니다. OpenStax Chemistry 2e의 원자·양자·전자배치·주기율·결합·물질 상태 단원을 근거로 한국어 설명과 확인 문제를 자체 작성했습니다. 원문 기출문제를 복사하지 않았습니다.
+- LOCAL: 19/19 tests PASS, 114 public files 정적 검사 PASS, git diff --check PASS. 중성 1–30 및 지원 이온의 전자 수/Pauli/Hund, Cr/Cu 예외·Fe 양이온의 4s 제거, 수소 1s 밀도와 적분 확률, 지원 범위 밖 입력의 거절을 검사했습니다. 기존 36,000 quiz cases도 통과합니다.
+- ACTUAL BROWSER: 별도 Playwright CLI Chromium에서 10개 개념 확인, 중성 원소 30개, Fe2+/Cr, 6a0 이내 99.9% 확률, 실제 탄소 사진·전자배치 설명·기존 문제 탭 연결을 확인했습니다. 개념 확인은 기존 학습 기록을 쓰지 않습니다. desktop1440/mobile390/320에서 페이지 가로 넘침과 관측된 page errors가 없었습니다. 새 미리보기는 새로고침 후 0/10인 실제 1440×1000 실행 화면입니다.
+- PARTIAL / NOT_RUN: 양자 설명은 학습용 수소 1s 해석과 제한된 전자배치입니다. 모든 원소의 수치 양자 계산, 독립 전문가 검토, 모든 기기/브라우저 검증은 하지 않았습니다. 원자·물성 규칙의 적용 범위를 각 개념에 표시합니다. 이번 변경의 REMOTE_CI/LIVE는 로컬 검증과 별도로 확인합니다. QA 파일은 ignored output/playwright/2026-10-10-improvements에 있습니다.
+
 ## 2026-10-10 Photo coverage expansion — REMOTE_CI / LIVE
 
 REMOTE_CI: implementation `baaf8252a3db023516ea74cab4278a42ed8b387f` [verify/deploy PASS](https://github.com/HyungminYoon1/element-atlas/actions/runs/37957960728); exact-photo selection follow-up `39d170cfc6ba51d9be30d2fca7cabc8bcfa730e5` [verify/deploy PASS](https://github.com/HyungminYoon1/element-atlas/actions/runs/37958550249). Verified origin and normal fast-forward pushes; no unrelated repositories or services changed.

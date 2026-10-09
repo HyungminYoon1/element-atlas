@@ -1,11 +1,12 @@
 import { ELEMENTS, DATASET } from './elements.js';
 import { PHOTO_PHASES,PHOTO_KINDS,hasSpecimen,matchesPhoto,photoCoverageLabel } from './photo-model.js';
 import { FAMILY_LABELS, PRACTICE_KEY, position, generateQuiz, emptyPractice, parsePractice, recordAnswer, LEVELS, CATEGORIES } from './model.js';
+import {mountLearning} from './learning-ui.js';
 
 const $=id=>document.getElementById(id),node=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e;};
 const familyColors={'alkali metal':'#f1d7ba','alkaline earth metal':'#f4e8be','transition metal':'#dce8df','post-transition metal':'#d8e8ec',metalloid:'#dce6bc',nonmetal:'#cce5ce',halogen:'#eadce6','noble gas':'#e0dcf1',lanthanide:'#e8e1cc',actinide:'#e9d8ce'};
 const units={electronegativity:'',ionization:' eV',density:' g/cm³',melting:' K'};
-let tab='explore',compare=[],quiz=null,index=0,answered=false,sessionCorrect=0,practice=emptyPractice(),storageBlocked=false;
+let tab='learn',compare=[],quiz=null,index=0,answered=false,sessionCorrect=0,practice=emptyPractice(),storageBlocked=false;
 try{const raw=localStorage.getItem(PRACTICE_KEY);if(raw){const parsed=parsePractice(raw);if(parsed)practice=parsed;else{storageBlocked=true;notify('저장된 학습 기록의 형식을 확인할 수 없습니다. 원본은 유지됩니다.');}}}catch{storageBlocked=true;}
 function notify(text){$('status').textContent=text;clearTimeout(notify.timer);notify.timer=setTimeout(()=>$('status').textContent='',5000);}
 function save(){if(storageBlocked){notify('기록은 이번 화면에서만 유지됩니다. 파일로 저장할 수 있습니다.');return;}try{localStorage.setItem(PRACTICE_KEY,JSON.stringify(practice));}catch{storageBlocked=true;notify('브라우저 저장 공간을 사용할 수 없습니다. 기록을 파일로 저장하세요.');}}
@@ -51,7 +52,7 @@ function openElement(z,initialPhoto=0){const e=ELEMENTS[z-1];$('detail-family').
   }else{const empty=node('div','unknown-photo');empty.append(node('strong',null,photoCoverageLabel(e)),node('p',null,e.photoReview.note),link('관련 자료 ↗',e.photoReview.reference));left.append(empty);}
   left.append(factsList(e));if(e.mass==null&&e.isotopeMass!=null)left.append(node('p','small',`PubChem 대표 동위원소 질량: ${e.isotopeMass} u · 표준 원자량과 다른 값입니다.`));
   right.append(node('h3',null,'전자배치'),node('div','electron-config',e.configuration));if(e.predicted)right.append(node('p','detail-warning','초중원소의 전자배치와 벌크 물성에는 예측이 포함됩니다. 실제 관측과 구분해 확인하세요.'));
-  right.append(node('p','small','중성 원자의 바닥상태 기준. 궤도 표기 순서가 채워지는 순서나 이온화 순서를 항상 뜻하지는 않습니다.'));
+  right.append(node('p','small','중성 원자의 바닥상태 기준. 궤도 표기 순서가 채워지는 순서나 이온화 순서를 항상 뜻하지는 않습니다.'));const learnConfig=node('button','learn-detail-link','전자배치 읽는 법 →');learnConfig.addEventListener('click',()=>{$('element-dialog').close();switchTab('learn');learning.open('filling');});right.append(learnConfig);
   const actions=node('div','detail-actions'),compareButton=node('button',null,compare.includes(z)?'비교에서 빼기':'비교에 추가'),questionButton=node('button','primary','이 원소 복습');compareButton.addEventListener('click',()=>{if(compare.includes(z))compare=compare.filter(x=>x!==z);else if(compare.length<3)compare.push(z);else{notify('비교는 최대 3개까지 가능합니다.');return;}renderCompare();renderTable();compareButton.textContent=compare.includes(z)?'비교에서 빼기':'비교에 추가';});questionButton.addEventListener('click',()=>{$('element-dialog').close();switchTab('practice');startQuiz([z]);});actions.append(compareButton,questionButton);right.append(actions,node('h3',null,'결정 자료'));
   if(!e.crystals.length)right.append(node('p','small','현재 자료에서 검토 가능한 순수 원소 결정 기록을 찾지 못했습니다. 미관측·미수록 여부는 원문을 확인하세요.'));
   for(const c of e.crystals){const card=node('article','crystal-card'),wrap=node('div','crystal-body'),info=node('p');info.append(node('strong',null,`${c.group} · No. ${c.groupNumber}`),node('br'),document.createTextNode(`a ${c.a} · b ${c.b} · c ${c.c} Å`),node('br'),document.createTextNode(`α ${c.alpha}° · β ${c.beta}° · γ ${c.gamma}°`),node('br'),document.createTextNode(`온도: ${c.temperature?`${c.temperature} K`:'기재 없음'} · 압력: ${c.pressure?`${c.pressure} kPa`:'기재 없음'}`));wrap.append(cellDiagram(c),info);card.append(wrap);const details=node('details'),ref=node('p','small',`${c.authors} (${c.year}). ${c.title}${c.method?` · ${c.method}`:''}`);details.append(node('summary',null,`COD ${c.id} · 원문과 측정 조건`),ref,link('COD / CIF ↗',c.url));if(c.doi)details.append(document.createTextNode(' · '),link('원 논문 ↗','https://doi.org/'+c.doi));card.append(details);right.append(card);}
@@ -77,3 +78,4 @@ for(const e of ELEMENTS){const row=node('article','coverage-item'),button=node('
   for(const p of e.photos){const item=node('article','credit');item.append(node('strong',null,`${e.symbol} · ${e.name} · ${p.label}`),node('p',null,`${PHOTO_PHASES[p.phase]} · ${PHOTO_KINDS[p.kind]}`),node('p',null,p.author),link(p.title,p.filePage),node('br'),link(p.license,p.licenseUrl),node('p',null,`${p.changes} · 원 라이선스 유지`));$('all-credits').append(item);}
 }
 renderTable();renderCompare();
+const learning=mountLearning($('learning'),{onElement:openElement,onPractice(category){switchTab('practice');$('category').value=category;startQuiz();}});

@@ -1,5 +1,11 @@
 # Decisions
 
+## D05 — Rule-first learning without a new persistence boundary
+
+Context: the element catalog gives facts and quizzes but no starting sequence. Options: another fact dump, a decorative atomic animation, or an authored explanation-to-inference path. Decision: ten Korean units linking particle counts, quantum states, electron configuration, bonding and conditional bulk properties; each has reasoning, a scoped rule, a counterexample/boundary, an original check and source/quiz/element links. Add a bounded 1–30 atom/curated-ion occupancy workbench and the analytic nonrelativistic hydrogen 1s radial distribution. Use measured neutral configurations, preserving Cr/Cu exceptions; remove higher-n electrons first for curated positive ions. Do not depict orbital occupancy as a trajectory or make universal claims from the octet/trend rules.
+
+Rationale: explain reusable causes, not just ask users to memorize data. Lessons and pure calculations stay separate from UI and from the reviewed 118-element snapshot. Existing numeric/photos/crystals and local practice schema are unchanged. Lesson-check feedback is transient and never awards durable quiz progress, writes shared summary, uploads information or uses an external runtime API. Affected: learning.js, learning-ui.js, index/app, scoped learning CSS, tests and README. Follow-up: verify every supported occupancy, hydrogen normalization, lesson/navigation/quiz bridges, storage fixtures, original images, source links and 320/390/1440 layouts; independent expert curriculum review is NOT_RUN.
+
 ## D01 — Sourced static science, not a live scraping proxy
 
 Context: the user wants comprehensive current element information and actual sample images. Options: runtime scraping, a copyrighted summary dump, or reviewed build-time numeric/photo snapshots. Decision: choose primary numeric sources and Commons original photos with explicit source/license records, vendored locally. Preserve unknowns and phase-specific information; do not claim universal latestness from retrieval time. Rationale: stable Pages behavior, no external runtime tracking, traceable science and licensing. Affected: importer, elements data, attributions/source UI, checks. Review: compare updated CIAAW mass values, representative elements/allotropes, heavy-element unknowns and every included image's caption/license.
