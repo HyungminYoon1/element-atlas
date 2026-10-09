@@ -1,5 +1,15 @@
 # Verification — 2026-10-09
 
+## 2026-10-10 Photo coverage expansion — LOCAL
+
+LOCAL TEST: 14/14 model/photo tests PASS, including the existing 36,000 quiz cases. STATIC: 111 public files, all 118 review entries, 97 photographed elements / 100 files, specimen87/other-observation10, photo hashes and individual source/license records PASS. All 118 original numerical/electron-configuration/crystal records compare exactly equal to the pre-update snapshot when photo fields are excluded. Numerical source and acquisition metadata remain unchanged.
+
+IMPORT RUNTIME: the legacy `--photos-only` entry ran with fetch-host monitoring; only four Commons metadata requests, zero PubChem/CIAAW/COD requests and zero image downloads on refresh. All existing files were reused. A missing author/license/download now fails rather than silently publishing a partial photograph inventory.
+
+LOCAL BROWSER: isolated Playwright CLI Chromium; all 118 element dialogs, every one of the 100 photo views decoded, 21 missing-photo explanations, all source destinations, multi-image selectors and five filters (118/97/87/10/21), 118 source inventory rows PASS. Desktop1440/mobile390/320 pages and oxygen dialogs had no horizontal overflow. Shared summary and existing own practice strings remained exactly unchanged during photo browsing. Observed page exceptions and failed asset responses: zero. Actual screenshots are under ignored `output/playwright/photo-coverage`; two contact sheets covered all 44 additions, each visually inspected. The first QA locator expected an exact label including options and timed out; it was changed to the observed selector, then the full flow passed.
+
+SOURCE SCOPE: element-atlas architecture/requirements/README, relevant importer/UI and manifest/checks VERIFIED. Entire 118-ID photo review and 100 original-file metadata/license records VERIFIED. Subject identification and scientific physical purity PARTIAL, based on cited photographers/institutions rather than a physical assay. Missing sources and observation boundaries are documented in `docs/photo-coverage.md`. No AI specimen pictures, unsafe home chemistry procedures or new hosting/storage/ranking providers were added. Unrelated app/game code and independent expert science review NOT_INSPECTED/NOT_RUN. REMOTE_CI and LIVE are recorded separately after publication.
+
 ## 2026-10-10 REMOTE_CI / LIVE
 
 Implementation commit `0313fed2ef693c0e21e8510c04add90f1ca93019`: [verify/deploy PASS](https://github.com/HyungminYoon1/element-atlas/actions/runs/37947822165). Public Pages uses the verified GitHub origin; normal pushes only.

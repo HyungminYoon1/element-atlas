@@ -1,4 +1,4 @@
-// Build-time factual snapshot. See source UI and tools/import-data.mjs.
+// Build-time factual snapshot. See tools/import-data.mjs and tools/photo-manifest.json.
 export const DATASET = {
   "acquired": "2026-10-09",
   "source": {
@@ -9,8 +9,14 @@ export const DATASET = {
   },
   "weightsRevision": "CIAAW 2021 table with 2024 revisions",
   "count": 118,
-  "photoCount": 56,
-  "crystalCount": 89
+  "photoCount": 97,
+  "crystalCount": 89,
+  "photoReviewed": "2026-10-10",
+  "photoAcquired": "2026-10-09",
+  "photoFileCount": 100,
+  "specimenCount": 87,
+  "observationCount": 10,
+  "photoReviewedCount": 118
 };
 export const ELEMENTS = [
   {
@@ -36,7 +42,27 @@ export const ELEMENTS = [
     "density": 0.00008988,
     "discovered": "1766",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/h-1.jpg",
+        "label": "액체 수소 속 입자 궤적",
+        "phase": "liquid",
+        "kind": "tracks",
+        "caption": "액체 수소 기포상자 사진. 선처럼 보이는 것은 입자가 지나가며 만든 기포이며, 수소 자체의 색이 아닙니다.",
+        "author": "Uncredited/DOE",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Liquid_hydrogen_bubblechamber.jpg",
+        "title": "File:Liquid hydrogen bubblechamber.jpg",
+        "description": "First tracks observed in John Wood's one-and-1/2-inch liquid hydrogen bubble chamber. Photograph taken May 25, 1955. Bubble Chamber-24",
+        "width": 640,
+        "height": 852,
+        "sourceRevision": "2005-09-07T00:26:44Z",
+        "sourceSha1": "ac30ccc3dbfc0e860355afa09ebd63e08d8a2996",
+        "sha256": "d428e418ba657117b5a3639f2ffc498195fbfc71114a551288e294c1cefa72fc",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1542173",
@@ -110,7 +136,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "액체 수소 속 입자 궤적 사진을 수록했습니다. 액체의 표면·색을 관찰하는 사진과는 구분됩니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ALiquid_hydrogen_bubblechamber.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 2,
@@ -135,7 +167,46 @@ export const ELEMENTS = [
     "density": 0.0001785,
     "discovered": "1868",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/he-1.jpg",
+        "label": "액체 헬륨",
+        "phase": "liquid",
+        "kind": "sample",
+        "caption": "4.2 K에서 끓는 액체 헬륨. 투명한 액체 표면을 용기 안에서 볼 수 있습니다.",
+        "author": "Alfred Leitner photographed this as part of his movie \"Liquid Helium, Superfluid\".",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Liquid_Helium.jpg",
+        "title": "File:Liquid Helium.jpg",
+        "description": "Liquid helium in a vacuum bottle. The liquid is at the normal boiling point (4.2K,1 atm.), boiling slowly.",
+        "width": 1600,
+        "height": 1200,
+        "sourceRevision": "2022-09-04T14:50:43Z",
+        "sourceSha1": "fe1288584d49dc5fe77408e99b0d0383b8e18d80",
+        "sha256": "5c5ec1bf4df2f258dcd2a27dfd0afba923102e90079d8fcd29ee9e05f00a0b7d",
+        "changes": "표시용 축소본"
+      },
+      {
+        "file": "assets/elements/he-2.jpg",
+        "label": "초유체 헬륨",
+        "phase": "liquid",
+        "kind": "sample",
+        "caption": "초유체 헬륨이 컵 바깥으로 흘러 방울을 만드는 모습. 벽을 타는 얇은 막 자체는 눈에 보이지 않습니다.",
+        "author": "I, AlfredLeitner, took this photograph as part of my movie \"Liquid Helium,Superfluid\"",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Liquid_helium_Rollin_film.jpg",
+        "title": "File:Liquid helium Rollin film.jpg",
+        "description": "The liquid helium is in the superfluid phase. A thin invisible film creeps up the inside wall of the cup and down on the outside. A drop forms. It will fall off into the liquid helium below. This will repeat until the cup is empty - provided the liquid remains superfluid.",
+        "width": 2504,
+        "height": 2214,
+        "sourceRevision": "2009-09-05T19:51:09Z",
+        "sourceSha1": "67ad85316cf94628dec81ec27526dd506e017d41",
+        "sha256": "cca208f936e1fc81c19a21d35fcf9cb8d75800830cb29cb4c8d86791c072c793",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "9008500",
@@ -209,7 +280,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ALiquid_Helium.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 3,
@@ -237,13 +314,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/li.png",
+        "label": "리튬 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "리튬 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "AdvancedTinkering",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Purified_lithium_in_an_ampoule_under_argon,_dark_background.png",
         "title": "File:Purified lithium in an ampoule under argon, dark background.png",
-        "description": "The purified lithium was prepared by distillation under high vacuum and subsequently sealed in an ampoule under argon. The preparation process is documented in this video: https://www.youtube.com/watch?v=9fSPtGRpTe8"
+        "description": "The purified lithium was prepared by distillation under high vacuum and subsequently sealed in an ampoule under argon. The preparation process is documented in this video: https://www.youtube.com/watch?v=9fSPtGRpTe8",
+        "width": 11552,
+        "height": 6496,
+        "sourceRevision": "2026-08-09T19:39:09Z",
+        "sourceSha1": "a5c7574c6e43bcc4be884f698982d5a4360d600c",
+        "sha256": "f6cb284bf26825242c7def14be28896bf4cef94d63149e20cd7b98b283c61d40",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -319,7 +405,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APurified_lithium_in_an_ampoule_under_argon%2C_dark_background.png",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 4,
@@ -344,7 +436,27 @@ export const ELEMENTS = [
     "density": 1.85,
     "discovered": "1798",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/be-1.jpg",
+        "label": "베릴륨 결정",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "베릴륨 금속의 결정질 조각. 원문에 기재된 질량은 140 g 이상입니다.",
+        "author": "Alchemist-hp = Alchemist-hp ( pse-mendelejew.de )",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Be-140g.jpg",
+        "title": "File:Be-140g.jpg",
+        "description": "Beryllium , >99 % pure, crystalline big fragment >140 g",
+        "width": 750,
+        "height": 900,
+        "sourceRevision": "2013-01-26T10:29:30Z",
+        "sourceSha1": "9afc425cad272df77465709ef188f2663db0db03",
+        "sha256": "a633e389e1c0690bfa4fc56236c74b6b9bea894ccc8f6c3dbdbfbb423a728d87",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "9017314",
@@ -418,7 +530,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ABe-140g.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 5,
@@ -446,13 +564,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/b.jpg",
+        "label": "붕소 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "붕소 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "James L Marshall",
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Boron_R105.jpg",
         "title": "File:Boron R105.jpg",
-        "description": "Polycrystalline chunks of rhombohedral β-boron, net 25.5 grams"
+        "description": "Polycrystalline chunks of rhombohedral β-boron, net 25.5 grams",
+        "width": 1029,
+        "height": 768,
+        "sourceRevision": "2013-01-08T05:21:54Z",
+        "sourceSha1": "36d1206b0af50d9fc03318c1894f5202f2dfaa81",
+        "sha256": "9d2977a307972af8df1e7ba6f05e6a51349d7c19e846454918b4c8cd2966f1ce",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -528,7 +655,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ABoron_R105.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 6,
@@ -556,13 +689,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/c.jpg",
+        "label": "탄소 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "흑연과 다이아몬드. 같은 탄소지만 원자 결합 배열에 따라 모양과 성질이 다릅니다.",
         "author": "Robert M. Lavinsky",
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Graphite-and-diamond-with-scale.jpg",
         "title": "File:Graphite-and-diamond-with-scale.jpg",
-        "description": "Diamond and graphite shown side by side, for illustrating carbon . Scale is based on a rough approximation. Diamond Locality: South Africa Size: 1.31 carats: 7 x 6 x 6 mm An octahedral facetable crystal. Graphite Locality: El Cochi, Sonora, Mexico Size: thumbnail, 2.5 x 2.4 x 1.2 cm Crudely crystallized graphite, with a resinous luster."
+        "description": "Diamond and graphite shown side by side, for illustrating carbon . Scale is based on a rough approximation. Diamond Locality: South Africa Size: 1.31 carats: 7 x 6 x 6 mm An octahedral facetable crystal. Graphite Locality: El Cochi, Sonora, Mexico Size: thumbnail, 2.5 x 2.4 x 1.2 cm Crudely crystallized graphite, with a resinous luster.",
+        "width": 961,
+        "height": 562,
+        "sourceRevision": "2015-04-04T12:27:47Z",
+        "sourceSha1": "f0bf191b177b433c0f6a147cd3e745b2dac09af6",
+        "sha256": "2502240dff3c2fd40335d1b5fa6c7897e953859f2ab53e568707f336c14ea77c",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -638,7 +780,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AGraphite-and-diamond-with-scale.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 7,
@@ -663,7 +811,27 @@ export const ELEMENTS = [
     "density": 0.0012506,
     "discovered": "1772",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/n-1.jpg",
+        "label": "액체 질소",
+        "phase": "liquid",
+        "kind": "sample",
+        "caption": "용기 안의 액체 질소. 주변의 흰 안개는 차가워진 공기 중 수분으로, 질소의 색이 아닙니다.",
+        "author": "Robin Müller",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Fluessiger_Stickstoff.jpg",
+        "title": "File:Fluessiger Stickstoff.jpg",
+        "description": "Liquid nitrogen",
+        "width": 2336,
+        "height": 3504,
+        "sourceRevision": "2011-08-23T15:58:24Z",
+        "sourceSha1": "be00288139d8cdb9dcad1a385fc93b52686816c0",
+        "sha256": "53adeb55bcfefe1adc2b9a7dd8b1d29a1d91842dc2921148893bf14ffbca3844",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1531482",
@@ -737,7 +905,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AFluessiger_Stickstoff.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 8,
@@ -762,7 +936,27 @@ export const ELEMENTS = [
     "density": 0.001429,
     "discovered": "1774",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/o-1.jpg",
+        "label": "액체 산소",
+        "phase": "liquid",
+        "kind": "sample",
+        "caption": "유리 용기 안의 옅은 파란색 액체 산소. 미 공군의 액체 산소 검사 사진입니다.",
+        "author": "U.S. Air Force/Staff Sgt. Jim Araos",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Liquid_oxygen_in_a_beaker_4.jpg",
+        "title": "File:Liquid oxygen in a beaker 4.jpg",
+        "description": "U.S. Air Force Staff Sgt. Dustin Volpi, 354th Logistics Readiness Squadron fuels distribution supervisor, tests liquid oxygen for purity March 20, 2012, Eielson Air Force Base , Alaska. Quality liquid oxygen is used to provide oxygen to pilots and aircrews at altitudes above 10,000 feet.",
+        "width": 876,
+        "height": 1068,
+        "sourceRevision": "2022-12-12T01:10:31Z",
+        "sourceSha1": "c1933a546e77f28522586d3f95c63b6f3efdb9dd",
+        "sha256": "68d9c4c6905129e22cc7b5c8032df23cccd8d0d665d9bf12ecfb6a970055b65d",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "2106196",
@@ -788,7 +982,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ALiquid_oxygen_in_a_beaker_4.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 9,
@@ -813,7 +1013,27 @@ export const ELEMENTS = [
     "density": 0.001696,
     "discovered": "1670",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/f-1.jpg",
+        "label": "액체 플루오린",
+        "phase": "liquid",
+        "kind": "sample",
+        "caption": "−196°C에서 촬영한 액체 플루오린. 상온의 기체와 다른 상태를 관찰할 수 있습니다.",
+        "author": "Fulvio314",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Fluoro_liquido_a_-196%C2%B0C_1.jpg",
+        "title": "File:Fluoro liquido a -196°C 1.jpg",
+        "description": "Liquid Fluorine at -196°C",
+        "width": 1177,
+        "height": 883,
+        "sourceRevision": "2016-02-13T01:50:05Z",
+        "sourceSha1": "f1e429dd195f64e404f602cebfadbb3d344275a8",
+        "sha256": "e088a9d4b275ab87f568f526a771559a0cc39a403c0c8b8bce9271f7086d1d51",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "9012465",
@@ -839,7 +1059,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AFluoro_liquido_a_-196%C2%B0C_1.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 10,
@@ -864,7 +1090,27 @@ export const ELEMENTS = [
     "density": 0.0008999,
     "discovered": "1898",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/ne-1.jpg",
+        "label": "네온 방전광",
+        "phase": "gas",
+        "kind": "discharge",
+        "caption": "네온 기체를 전기적으로 들뜨게 했을 때의 방전광. 평소 네온 기체는 무색입니다.",
+        "author": "Jurii",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Neon-glow.jpg",
+        "title": "File:Neon-glow.jpg",
+        "description": "Vial of glowing ultrapure neon. Original size in cm: 1 x 5",
+        "width": 1216,
+        "height": 1216,
+        "sourceRevision": "2009-07-31T20:23:19Z",
+        "sourceSha1": "8e2af339209bb22c25436e484d97888e9afccf00",
+        "sha256": "3b0dc368680841beeb010e592bf844889f9dc4c1a3b07fb66ca6a72a5e53b44d",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1010148",
@@ -938,7 +1184,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "무색 기체의 방전 사진을 수록했습니다. 액체·고체 상태의 재사용 가능한 실물 사진은 아직 확보하지 못했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ANeon-glow.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 11,
@@ -966,13 +1218,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/na.jpg",
+        "label": "나트륨 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "나트륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "The original uploader was Dnn87 at English Wikipedia .",
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Na_(Sodium).jpg",
         "title": "File:Na (Sodium).jpg",
-        "description": "Sodium (Na) metal from the Dennis S.K. collection. Selfmade photo."
+        "description": "Sodium (Na) metal from the Dennis S.K. collection. Selfmade photo.",
+        "width": 4000,
+        "height": 3000,
+        "sourceRevision": "2008-04-05T11:10:18Z",
+        "sourceSha1": "3bd71475e5002ed5d181ec71d53bb68d4ebd6fed",
+        "sha256": "9d2f5f1d92d80dd647ca8593d7bee1992962b1d29e705104e56677f6d7f8311e",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -1048,7 +1309,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ANa_(Sodium).jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 12,
@@ -1076,13 +1343,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/mg.jpg",
+        "label": "마그네슘 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "마그네슘 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Mark Fergus, CSIRO",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_2893_Crystalised_magnesium.jpg",
         "title": "File:CSIRO ScienceImage 2893 Crystalised magnesium.jpg",
-        "description": "Crystalised magnesium"
+        "description": "Crystalised magnesium",
+        "width": 2296,
+        "height": 1728,
+        "sourceRevision": "2014-09-19T02:50:42Z",
+        "sourceSha1": "708b7d189fa2a066640310d7f3096c641b476aa2",
+        "sha256": "780db296f355a7464c60331e3ebbf77c4f54e3187c3261bd763e5e6f1a6ffc21",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -1158,7 +1434,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ACSIRO_ScienceImage_2893_Crystalised_magnesium.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 13,
@@ -1183,7 +1465,27 @@ export const ELEMENTS = [
     "density": 2.7,
     "discovered": "Ancient",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/al-1.jpg",
+        "label": "알루미늄 표면 조직",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "알루미늄 막대의 표면을 처리해 드러낸 결정 조직. 초점이 다른 여러 실제 사진을 합성한 초점 스택 사진입니다.",
+        "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
+        "license": "FAL",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Aluminium_bar_surface_etched.jpg",
+        "title": "File:Aluminium bar surface etched.jpg",
+        "description": "Bar of (Al) aluminium crystal growth raw material, with visible dendrites on the macroetched surface, purity 99.9998%, sector size about 55 × 37 mm (from the collection of Ethan Currens).",
+        "width": 5616,
+        "height": 3744,
+        "sourceRevision": "2010-02-21T12:35:19Z",
+        "sourceSha1": "ddc7d8af245eeb75aea4ba226e2a1925dd8c16b0",
+        "sha256": "c7f1d37e8db8fa6fd7e41a11b30fdf8fd0fb4dacf4ab63151770acad6732a8a0",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1502689",
@@ -1257,7 +1559,13 @@ export const ELEMENTS = [
         "flags": "has coordinates,has Fobs",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AAluminium_bar_surface_etched.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 14,
@@ -1285,13 +1593,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/si.jpg",
+        "label": "규소 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "규소 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Rasiel Suarez on behalf of Luciteria LLC",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:A_piece_of_zone_refined_silicon.JPG",
         "title": "File:A piece of zone refined silicon.JPG",
-        "description": "A piece of zone refined silicon"
+        "description": "A piece of zone refined silicon",
+        "width": 982,
+        "height": 753,
+        "sourceRevision": "2016-02-09T20:14:16Z",
+        "sourceSha1": "b1bd737dac8e80699712311794b7159d6b3681d8",
+        "sha256": "11141f4fc28a912775b5eaddab1d5c47ed8a07c8823f9f94b44706e0c136c624",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -1367,7 +1684,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AA_piece_of_zone_refined_silicon.JPG",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 15,
@@ -1395,13 +1718,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/p.jpg",
+        "label": "인 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "붉은 인 표본. 인의 동소체 가운데 적린입니다.",
         "author": "Tomihahndorf",
         "license": "Public domain",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Phosphor_rot.jpg",
         "title": "File:Phosphor rot.jpg",
-        "description": "Red phosphor"
+        "description": "Red phosphor",
+        "width": 665,
+        "height": 423,
+        "sourceRevision": "2006-08-26T20:48:23Z",
+        "sourceSha1": "4f05b53225e8f0b1ad8a3fb3d389e9b1da142d86",
+        "sha256": "1887ad77b43171b4dd34bebb1743d7719914a105bc50758736ad9a537682703c",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -1477,7 +1809,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APhosphor_rot.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 16,
@@ -1505,13 +1843,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/s.jpg",
+        "label": "황 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "천연 황 결정 표본. 노란색 부분은 원소 황이며 바탕의 암석과 구분해야 합니다.",
         "author": "Ivar Leidus",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Sulfur_-_El_Desierto_mine,_San_Pablo_de_Napa,_Daniel_Campos_Province,_Potos%C3%AD,_Bolivia.jpg",
         "title": "File:Sulfur - El Desierto mine, San Pablo de Napa, Daniel Campos Province, Potosí, Bolivia.jpg",
-        "description": "Sulfur crystals on the matrix (4.8 × 3.5 × 3 cm). Found from El Desierto mine, San Pablo de Napa, Daniel Campos Province, Potosí, Bolivia"
+        "description": "Sulfur crystals on the matrix (4.8 × 3.5 × 3 cm). Found from El Desierto mine, San Pablo de Napa, Daniel Campos Province, Potosí, Bolivia",
+        "width": 6000,
+        "height": 5000,
+        "sourceRevision": "2021-04-15T18:59:01Z",
+        "sourceSha1": "380b5e14f09517a358510bdfc8f7b28d884de0ee",
+        "sha256": "f81f4ef643e3ee06716ed02db5ec816ee44f958a9c79f8a0b12111f2587c09cb",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -1563,7 +1910,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASulfur_-_El_Desierto_mine%2C_San_Pablo_de_Napa%2C_Daniel_Campos_Province%2C_Potos%C3%AD%2C_Bolivia.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 17,
@@ -1588,8 +1941,53 @@ export const ELEMENTS = [
     "density": 0.003214,
     "discovered": "1774",
     "predicted": false,
-    "photos": [],
-    "crystals": []
+    "photos": [
+      {
+        "file": "assets/elements/cl-1.jpg",
+        "label": "염소 기체",
+        "phase": "gas",
+        "kind": "sample",
+        "caption": "유리병 안의 황록색 염소 기체. 용기와 기체의 색을 구분해 보세요.",
+        "author": "W. Oelen",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Chlorine_in_bottle.jpg",
+        "title": "File:Chlorine in bottle.jpg",
+        "description": "Chlorine gas in a bottle",
+        "width": 500,
+        "height": 667,
+        "sourceRevision": "2011-05-31T00:06:02Z",
+        "sourceSha1": "781eb5d2baba4e59591f6a0578c7d44f662deb1e",
+        "sha256": "7f20e021354bed8c79b1614e98dd84ae1f514aa0a653a8d6395e72aa9f627633",
+        "changes": "표시용 축소본"
+      },
+      {
+        "file": "assets/elements/cl-2.jpg",
+        "label": "고체 염소",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "−150°C에서 촬영한 고체 염소. 액화보다 더 낮은 온도에서는 고체가 됩니다.",
+        "author": "Alexander C. Wimmer",
+        "license": "CC BY-SA 3.0 at",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Die_chemischen_elemente_cl.jpg",
+        "title": "File:Die chemischen elemente cl.jpg",
+        "description": "Solid Chlorine at -150°C",
+        "width": 1081,
+        "height": 765,
+        "sourceRevision": "2011-12-08T07:52:58Z",
+        "sourceSha1": "e37f93a0d109c8142a4e50cdd51e3c3f6134fdf9",
+        "sha256": "d090c6925ead2529d54347c1388c71db557914853a9cff296332b1eb69a089e2",
+        "changes": "표시용 축소본"
+      }
+    ],
+    "crystals": [],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AChlorine_in_bottle.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 18,
@@ -1614,7 +2012,27 @@ export const ELEMENTS = [
     "density": 0.0017837,
     "discovered": "1894",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/ar-1.jpg",
+        "label": "고체·액체 아르곤",
+        "phase": "solid-liquid",
+        "kind": "sample",
+        "caption": "녹고 있는 약 2 cm 크기의 고체 아르곤. 아래쪽에는 녹은 액체가 흐릅니다. 원본에 대비·선명도 보정이 적용되어 있습니다.",
+        "author": "No machine-readable author provided. Deglr6328~commonswiki assumed (based on copyright claims). For the background to this image see here .",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Argon_ice_1.jpg",
+        "title": "File:Argon ice 1.jpg",
+        "description": "From en wiki: A small (~2 cm long) piece of rapidly melting argon ice (the liquid is flowing off at the bottom) which has been frozen by allowing a slow stream of the gas to flow into a small graduated cylinder which was immersed into a cup of liquid nitrogen. Auto-contrast and unsharp mask applied in photoshop. Image taken by me.",
+        "width": 1829,
+        "height": 1632,
+        "sourceRevision": "2007-02-23T07:56:47Z",
+        "sourceSha1": "34442a2a3a74692d89ae3967d42727798460d4b4",
+        "sha256": "da6748ba8d2045aa3e26ae0735aa9de68ade3afe3bbfc97224b447d2330852a4",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1541541",
@@ -1688,7 +2106,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AArgon_ice_1.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 19,
@@ -1716,13 +2140,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/k.jpg",
+        "label": "칼륨 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "칼륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Unknown author Unknown author",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Potassium-2.jpg",
         "title": "File:Potassium-2.jpg",
-        "description": "Potassium pearls under paraffin oil. Original size of the largest pearl: 0.5 cm."
+        "description": "Potassium pearls under paraffin oil. Original size of the largest pearl: 0.5 cm.",
+        "width": 481,
+        "height": 394,
+        "sourceRevision": "2011-05-09T04:46:49Z",
+        "sourceSha1": "5a387295b4e7790bc6aa9c23305e686218553880",
+        "sha256": "50d6655642e4fffa5a8ce086d5725a707244579d273eedd5cc04a1009e99edb1",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -1798,7 +2231,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APotassium-2.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 20,
@@ -1826,13 +2265,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/ca.jpg",
+        "label": "칼슘 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "칼슘 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Original upload by 范皓程",
         "license": "CC BY 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Calcium_crystals_in_ampoule_cropped.jpg",
         "title": "File:Calcium crystals in ampoule cropped.jpg",
-        "description": "Sealed glass ampoule containing crystals of pure calcium metal."
+        "description": "Sealed glass ampoule containing crystals of pure calcium metal.",
+        "width": 1832,
+        "height": 1200,
+        "sourceRevision": "2026-09-10T01:06:56Z",
+        "sourceSha1": "56a54f22342145306f7bfb6a3c1e7d56e7531746",
+        "sha256": "b1377c7511022891caf687b492640e9b4c28c3ef33e833a5dacd90de65b2eaf7",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -1908,7 +2356,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ACalcium_crystals_in_ampoule_cropped.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 21,
@@ -1936,13 +2390,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/sc.jpg",
+        "label": "스칸듐 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "스칸듐 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Scandium_sublimed_dendritic_and_1cm3_cube.jpg",
         "title": "File:Scandium sublimed dendritic and 1cm3 cube.jpg",
-        "description": "Scandium , sublimed - dendritic , high purity 99.998 % Sc/TREM. As well as an argon arc remelted 1 cm 3 scandium cube for comparison."
+        "description": "Scandium , sublimed - dendritic , high purity 99.998 % Sc/TREM. As well as an argon arc remelted 1 cm 3 scandium cube for comparison.",
+        "width": 5120,
+        "height": 3136,
+        "sourceRevision": "2010-06-24T01:37:12Z",
+        "sourceSha1": "358d6513cef2d03d032002778076b36e1482bd56",
+        "sha256": "08ae159658a508247657ef93f7cf3f9417f963a0b7b35c21c085340e3075a239",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -2018,7 +2481,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AScandium_sublimed_dendritic_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 22,
@@ -2046,13 +2515,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/ti.jpg",
+        "label": "타이타늄 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "타이타늄 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( pse-mendelejew.de )",
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Titan-crystal_bar.JPG",
         "title": "File:Titan-crystal bar.JPG",
-        "description": "A titanium crystal bar, high purity 99,995 %, made by the iodide process at URALREDMET in the Soviet era. Weight ≈283 g, ≈5.5 \" long, ≈1 \" diameter"
+        "description": "A titanium crystal bar, high purity 99,995 %, made by the iodide process at URALREDMET in the Soviet era. Weight ≈283 g, ≈5.5 \" long, ≈1 \" diameter",
+        "width": 5572,
+        "height": 3500,
+        "sourceRevision": "2009-07-24T12:35:30Z",
+        "sourceSha1": "8243ab8f18f15d85d5e2eeeef2c36a0ce9ac8ebf",
+        "sha256": "507212f6039746c0fc7a3638d7cb0f1999b700439a2ead90e282f34c408399c7",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -2128,7 +2606,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ATitan-crystal_bar.JPG",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 23,
@@ -2156,13 +2640,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/v.jpg",
-        "caption": "바나듐 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
+        "label": "바나듐 표본",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "바나듐 결정봉과 금속 정육면체. 일부 표면의 녹색은 공기 중에서 생긴 산화층입니다.",
         "author": "Alchemist-hp ( pse-mendelejew.de ).",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Vanadium_crystal_bar_and_1cm3_cube.jpg",
         "title": "File:Vanadium crystal bar and 1cm3 cube.jpg",
-        "description": "Purest Vanadium 99.9%, three samples of a crystal bar showing different crystal textures and an on air greenish oxidized surface, made by crystal bar process (from the collection of Ethan Currens), as well as a highly pure (99.95% = 3N5) 1 cm 3 vanadium cube for comparison."
+        "description": "Purest Vanadium 99.9%, three samples of a crystal bar showing different crystal textures and an on air greenish oxidized surface, made by crystal bar process (from the collection of Ethan Currens), as well as a highly pure (99.95% = 3N5) 1 cm 3 vanadium cube for comparison.",
+        "width": 4698,
+        "height": 3588,
+        "sourceRevision": "2011-04-17T22:41:51Z",
+        "sourceSha1": "b834f749dcf2968457c25cf956073cbaff68774c",
+        "sha256": "3bb93df9ca4702d1831333543ef52d6ad3a35a8690d5834cb1f03d8733c5f156",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -2238,7 +2731,13 @@ export const ELEMENTS = [
         "flags": "has coordinates,has Fobs",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AVanadium_crystal_bar_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 24,
@@ -2266,13 +2765,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/cr.jpg",
+        "label": "크로뮴 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "크로뮴 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Chromium_crystals_and_1cm3_cube.jpg",
         "title": "File:Chromium crystals and 1cm3 cube.jpg",
-        "description": "High purity (99.999 % = 5N) chromium crystals, produced by chemical transport reaction through decomposition of chromium iodides, as well as a high purity (99,95 % = 3N5) 1 cm 3 chromium cube for comparison."
+        "description": "High purity (99.999 % = 5N) chromium crystals, produced by chemical transport reaction through decomposition of chromium iodides, as well as a high purity (99,95 % = 3N5) 1 cm 3 chromium cube for comparison.",
+        "width": 5279,
+        "height": 3153,
+        "sourceRevision": "2010-04-27T22:41:19Z",
+        "sourceSha1": "d2386506e88d82e59cc7f3a52f5167eb0db0fcc0",
+        "sha256": "d6964fc2a6fe41f7d2932707c192977cf66d6931a340d18f69e309424c664a33",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -2348,7 +2856,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AChromium_crystals_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 25,
@@ -2376,13 +2890,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/mn.jpg",
+        "label": "망가니즈 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "망가니즈 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Manganese_electrolytic_and_1cm3_cube.jpg",
         "title": "File:Manganese electrolytic and 1cm3 cube.jpg",
-        "description": "Pure (99.99 %) manganese chips, electrolytically refined , typical view of on air oxidized surface, as well as a high purity (99.99 % = 4N) 1 cm 3 manganese cube for comparison."
+        "description": "Pure (99.99 %) manganese chips, electrolytically refined , typical view of on air oxidized surface, as well as a high purity (99.99 % = 4N) 1 cm 3 manganese cube for comparison.",
+        "width": 5424,
+        "height": 3368,
+        "sourceRevision": "2013-01-27T06:41:23Z",
+        "sourceSha1": "e9acf8a4b5ea85968e6c249a1ee47b232c864353",
+        "sha256": "3964b674f9da1bf9484df0eabeb507bb70f6f4dd40cc42c630163905b0b97982",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -2458,7 +2981,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AManganese_electrolytic_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 26,
@@ -2486,13 +3015,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/fe.jpg",
+        "label": "철 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "철 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Iron_electrolytic_and_1cm3_cube.jpg",
         "title": "File:Iron electrolytic and 1cm3 cube.jpg",
-        "description": "Pure (99.97 %+) iron chips, electrolytically refined , as well as a high purity (99.9999 % = 6N) 1 cm 3 iron cube for comparison."
+        "description": "Pure (99.97 %+) iron chips, electrolytically refined , as well as a high purity (99.9999 % = 6N) 1 cm 3 iron cube for comparison.",
+        "width": 5135,
+        "height": 3197,
+        "sourceRevision": "2012-11-25T00:27:37Z",
+        "sourceSha1": "68174eb2a2e0e28525cbc510faac6bc11e6ad14c",
+        "sha256": "f306d5a454c1202a413937d4dcf5f48bc069a9ba748d9a2d54118d4dff8745fc",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -2568,7 +3106,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AIron_electrolytic_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 27,
@@ -2596,13 +3140,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/co.jpg",
+        "label": "코발트 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "코발트 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Kobalt_electrolytic_and_1cm3_cube.jpg",
         "title": "File:Kobalt electrolytic and 1cm3 cube.jpg",
-        "description": "Pure (99.9 %) cobalt chips, electrolytically refined , as well as a high purity (99.8 % = 2N8) 1 cm 3 cobalt cube for comparison."
+        "description": "Pure (99.9 %) cobalt chips, electrolytically refined , as well as a high purity (99.8 % = 2N8) 1 cm 3 cobalt cube for comparison.",
+        "width": 5616,
+        "height": 3744,
+        "sourceRevision": "2010-09-19T00:32:47Z",
+        "sourceSha1": "b8d3b491a13eadedd4a2cc8e7045ba65035d2b6c",
+        "sha256": "504a4c7496addd27efc03f8e780be3b4f1ec8eeaa6622b82abd7e70974d834c3",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -2678,7 +3231,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AKobalt_electrolytic_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 28,
@@ -2706,13 +3265,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/ni.jpg",
+        "label": "니켈 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "니켈 금속 표본과 비교용 정육면체. 틈에 보이는 녹색 부분은 니켈염으로 금속 자체의 색이 아닙니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Nickel_electrolytic_and_1cm3_cube.jpg",
         "title": "File:Nickel electrolytic and 1cm3 cube.jpg",
-        "description": "Electrolytically refined pure (99.9 %) nickel nodules, and a high purity (99.99 % = 4N) 1 cm 3 nickel cube for comparison. Crystallized nickel-electrolyte salts (green) can be seen in the pores of the nodules."
+        "description": "Electrolytically refined pure (99.9 %) nickel nodules, and a high purity (99.99 % = 4N) 1 cm 3 nickel cube for comparison. Crystallized nickel-electrolyte salts (green) can be seen in the pores of the nodules.",
+        "width": 5616,
+        "height": 3744,
+        "sourceRevision": "2010-09-19T16:31:29Z",
+        "sourceSha1": "d5f5b998985d2db121f158e8e79ce2e4a618bf35",
+        "sha256": "2db0ae02b80846dcbb9bf567b28a9ca1230f278cf49ee0c9237caa700dd9d5f0",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -2788,7 +3356,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ANickel_electrolytic_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 29,
@@ -2816,13 +3390,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/cu.jpg",
+        "label": "구리 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "자연 구리 표본. 표면 상태와 산화 정도에 따라 보이는 색이 달라질 수 있습니다.",
         "author": "Native_Copper_Macro_Digon3.jpg : “Jonathan Zander ( Digon3 )\" derivative work: Materialscientist ( talk )",
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
         "filePage": "https://commons.wikimedia.org/wiki/File:NatCopper.jpg",
         "title": "File:NatCopper.jpg",
-        "description": "Macro of native copper about 1 ½ inches (4 cm) in size."
+        "description": "Macro of native copper about 1 ½ inches (4 cm) in size.",
+        "width": 1534,
+        "height": 1452,
+        "sourceRevision": "2017-05-05T22:51:06Z",
+        "sourceSha1": "d7f8c02a722c4f1fdb8a1d1360aae1d6ae093984",
+        "sha256": "41280a8bf5afa14d1df47810dfd1c20f6fd04acf3d427362a6a15868bb865333",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -2898,7 +3481,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ANatCopper.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 30,
@@ -2926,13 +3515,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/zn.jpg",
+        "label": "아연 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "아연 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Zinc_fragment_sublimed_and_1cm3_cube.jpg",
         "title": "File:Zinc fragment sublimed and 1cm3 cube.jpg",
-        "description": "zinc , purity 99.995 %, left: a crystaline fragment of an ingot, right: sublimed - dendritic , and a 1 cm 3 zinc cube for comparison."
+        "description": "zinc , purity 99.995 %, left: a crystaline fragment of an ingot, right: sublimed - dendritic , and a 1 cm 3 zinc cube for comparison.",
+        "width": 5135,
+        "height": 3138,
+        "sourceRevision": "2010-10-02T21:46:53Z",
+        "sourceSha1": "5a777a5bcac2de0f8968e89dcd7ce5fca696220f",
+        "sha256": "2c6f0e8a40845e6473143a19e39ea4a413cf4e4f51bb876d42ed28c5e55e2693",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -3008,7 +3606,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AZinc_fragment_sublimed_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 31,
@@ -3036,13 +3640,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/ga.png",
+        "label": "갈륨 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "갈륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Arònel123",
         "license": "CC BY 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Gallium_bar_cracked_open_to_show_crystal_structure_with_scale_1.png",
         "title": "File:Gallium bar cracked open to show crystal structure with scale 1.png",
-        "description": "Gallium bar cracked open to show choncoidal fractures with scale (edited from original)"
+        "description": "Gallium bar cracked open to show choncoidal fractures with scale (edited from original)",
+        "width": 2560,
+        "height": 1440,
+        "sourceRevision": "2026-03-13T13:29:01Z",
+        "sourceSha1": "81c73f1a64d05c3050c8c36cab62c7558d16c994",
+        "sha256": "7b826722f5181e9fbcce5e002a892b2f911ded2a968cf19538c1c6255f715d38",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -3118,7 +3731,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AGallium_bar_cracked_open_to_show_crystal_structure_with_scale_1.png",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 32,
@@ -3146,13 +3765,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/ge.jpg",
+        "label": "저마늄 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "저마늄 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Jurii",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Polycrystalline-germanium.jpg",
         "title": "File:Polycrystalline-germanium.jpg",
-        "description": "12 grams polycrystalline germanium, 2*3 cm."
+        "description": "12 grams polycrystalline germanium, 2*3 cm.",
+        "width": 1056,
+        "height": 1056,
+        "sourceRevision": "2009-10-21T21:44:18Z",
+        "sourceSha1": "c5d616a724e3cfcb0cea5f7540f0637d791742b1",
+        "sha256": "5a4ea700415364edda2b50b9a2553c16f5094efcc1976d95c4bd608532a93de7",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -3228,7 +3856,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APolycrystalline-germanium.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 33,
@@ -3253,7 +3887,27 @@ export const ELEMENTS = [
     "density": 5.776,
     "discovered": "Ancient",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/as-1.jpg",
+        "label": "자연 비소",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "자연에서 생성된 원소 비소 표본. 비소를 포함한 다른 광물이나 화합물과 구분됩니다.",
+        "author": "Arsen_1.jpg : Original uploader was Tomihahndorf at de.wikipedia derivative work: Materialscientist ( talk )",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Arsen_1a.jpg",
+        "title": "File:Arsen 1a.jpg",
+        "description": ";Description: Elemental arsenic — mineral specimen.",
+        "width": 445,
+        "height": 255,
+        "sourceRevision": "2009-12-16T03:26:37Z",
+        "sourceSha1": "6e11964a0f2d314ebafba9f8033c36c9b22eb071",
+        "sha256": "efd055aa6630ba53bc369f80c7c61808f2c53adae216c30b0ad56e4648280b38",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "9013006",
@@ -3327,7 +3981,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AArsen_1a.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 34,
@@ -3355,13 +4015,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/se.jpg",
+        "label": "셀레늄 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "셀레늄의 서로 다른 동소체 표본.",
         "author": "W. Oelen",
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:SeBlackRed.jpg",
         "title": "File:SeBlackRed.jpg",
-        "description": "Black, glassy amorphous (with thin layer of grey selenium) and red amorphous selenium"
+        "description": "Black, glassy amorphous (with thin layer of grey selenium) and red amorphous selenium",
+        "width": 612,
+        "height": 510,
+        "sourceRevision": "2011-06-01T12:09:59Z",
+        "sourceSha1": "9c09fb783532ca4847b1a44568b0383c23413bcf",
+        "sha256": "08200259dbdfb1f9d31866834b7452c7efa144828b0cd78055ae6bf897916c6c",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -3437,7 +4106,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASeBlackRed.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 35,
@@ -3465,13 +4140,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/br.jpg",
+        "label": "브로민 표본",
+        "phase": "liquid",
+        "kind": "sample",
         "caption": "용기에 봉입된 브로민. 상온에서 적갈색 액체인 원소입니다.",
         "author": "Alchemist-hp ( pse-mendelejew.de )",
         "license": "CC BY-SA 3.0 de",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
         "filePage": "https://commons.wikimedia.org/wiki/File:Bromine_vial_in_acrylic_cube.jpg",
         "title": "File:Bromine vial in acrylic cube.jpg",
-        "description": "The chemical element bromine , purity 99,8%, amount ~2g, sealed in a borosilicate glass vial (ampoule), sealed in a 2-inch cube of acrylic."
+        "description": "The chemical element bromine , purity 99,8%, amount ~2g, sealed in a borosilicate glass vial (ampoule), sealed in a 2-inch cube of acrylic.",
+        "width": 3421,
+        "height": 3387,
+        "sourceRevision": "2009-08-17T21:58:22Z",
+        "sourceSha1": "b2301d3ed8bf93c049171ec075afb1133e4a4e10",
+        "sha256": "d1b0126b01136b9a37170362e47f1abc8a1cae7a885a7b6689550899226c8d34",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -3499,7 +4183,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ABromine_vial_in_acrylic_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 36,
@@ -3524,7 +4214,27 @@ export const ELEMENTS = [
     "density": 0.003733,
     "discovered": "1898",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/kr-1.jpg",
+        "label": "크립톤 방전광",
+        "phase": "gas",
+        "kind": "discharge",
+        "caption": "크립톤 기체의 방전광. 발광 색은 들뜬 원자가 내는 빛이며, 평소 기체의 색이 아닙니다.",
+        "author": "Jurii",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Krypton-glow.jpg",
+        "title": "File:Krypton-glow.jpg",
+        "description": "Vial of glowing ultrapure krypton. Original size in cm: 1 x 5.",
+        "width": 1016,
+        "height": 1016,
+        "sourceRevision": "2009-07-23T21:37:01Z",
+        "sourceSha1": "3a2333091fb913028e2a3fea56f34333ccd49c98",
+        "sha256": "f19e3fae7d59d9e5e2a837135e7a911b80eaf5fae8d30d0d1f2c6600e55e6196",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "9008471",
@@ -3574,7 +4284,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "무색 기체의 방전 사진을 수록했습니다. 액체·고체 상태의 재사용 가능한 실물 사진은 아직 확보하지 못했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AKrypton-glow.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 37,
@@ -3602,13 +4318,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/rb.jpg",
-        "caption": "루비듐 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
+        "label": "루비듐 표본",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "루비듐 금속을 봉입한 앰풀. 표본에 보이는 여러 색의 일부는 초과산화물입니다.",
         "author": "Dnn87",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Rb5.JPG",
         "title": "File:Rb5.JPG",
-        "description": "Rubidium metal sample from the Dennis s.k collection. If you look close you can see some colorful superoxide inside the ampoule. These are only visible in bright light."
+        "description": "Rubidium metal sample from the Dennis s.k collection. If you look close you can see some colorful superoxide inside the ampoule. These are only visible in bright light.",
+        "width": 4000,
+        "height": 3000,
+        "sourceRevision": "2007-12-20T12:54:30Z",
+        "sourceSha1": "a57d3c6542781b6254e74dc648b4270fb62ce76d",
+        "sha256": "efc910e8754bf8599912f5c82ed4aba6d04482d4ab57989976cf2bac447e856a",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -3684,7 +4409,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ARb5.JPG",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 38,
@@ -3712,13 +4443,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/sr.jpg",
+        "label": "스트론튬 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "스트론튬 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Strontium_destilled_crystals.jpg",
         "title": "File:Strontium destilled crystals.jpg",
-        "description": "The chemical element strontium as synthetic crystals, sealed under argon in a glass ampoule, purity (99.95 %). Size of the image ca. 3cm * 4,7cm"
+        "description": "The chemical element strontium as synthetic crystals, sealed under argon in a glass ampoule, purity (99.95 %). Size of the image ca. 3cm * 4,7cm",
+        "width": 5236,
+        "height": 3357,
+        "sourceRevision": "2016-04-04T14:04:19Z",
+        "sourceSha1": "e628d33c7c3d1065d9db4dac99bf216ec82d4341",
+        "sha256": "0130bdb99ca46af06a8133f0e75727eb6d3aadb8b69db9f15b218cc21ea91421",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -3794,7 +4534,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AStrontium_destilled_crystals.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 39,
@@ -3822,13 +4568,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/y.jpg",
+        "label": "이트륨 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "이트륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Yttrium_sublimed_dendritic_and_1cm3_cube.jpg",
         "title": "File:Yttrium sublimed dendritic and 1cm3 cube.jpg",
-        "description": "Yttrium , sublimed - dendritic , high purity 99.99 % Y/TREM. As well as an argon arc remelted 1 cm 3 yttrium cube for comparison. Purity 99.9 %."
+        "description": "Yttrium , sublimed - dendritic , high purity 99.99 % Y/TREM. As well as an argon arc remelted 1 cm 3 yttrium cube for comparison. Purity 99.9 %.",
+        "width": 4952,
+        "height": 3368,
+        "sourceRevision": "2010-07-05T18:14:15Z",
+        "sourceSha1": "b3f224b8d656e0341cc94070033f78afcdc36a80",
+        "sha256": "19b20f5e0c79f9e3d2adbddc147a2465c21a30ce4d643375025fc85f51121dd9",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -3904,7 +4659,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AYttrium_sublimed_dendritic_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 40,
@@ -3932,13 +4693,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/zr.jpg",
+        "label": "지르코늄 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "지르코늄 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( pse-mendelejew.de ).",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Zirconium_crystal_bar_and_1cm3_cube.jpg",
         "title": "File:Zirconium crystal bar and 1cm3 cube.jpg",
-        "description": "Purest zirconium 99.97%, two samples of crystal bar showing different surface textures, made by crystal bar process , as well as a highly pure (99,95 % = 3N5) 1 cm 3 zirconium cube for comparison. The metal piece-photo was taken on a white glass plate."
+        "description": "Purest zirconium 99.97%, two samples of crystal bar showing different surface textures, made by crystal bar process , as well as a highly pure (99,95 % = 3N5) 1 cm 3 zirconium cube for comparison. The metal piece-photo was taken on a white glass plate.",
+        "width": 4758,
+        "height": 3498,
+        "sourceRevision": "2011-04-10T21:10:11Z",
+        "sourceSha1": "ab09887c7fd4f14868976014df53401a50d2710b",
+        "sha256": "42137bf888ea51d9dbd2d8b2dc4ec6bbe7002a5c5a74b8af3c3edced637a5bf9",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -4014,7 +4784,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AZirconium_crystal_bar_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 41,
@@ -4042,13 +4818,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/nb.jpg",
-        "caption": "나이오븀 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
+        "label": "나이오븀 표본",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "나이오븀 결정과 비교용 정육면체. 정육면체에는 양극산화 표면 처리가 적용되어 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Niobium_crystals_and_1cm3_cube.jpg",
         "title": "File:Niobium crystals and 1cm3 cube.jpg",
-        "description": "High purity (99.995 % = 4N5) niobium crystals, electrolytic made, as well as a high purity (99.95 % = 3N5) 1 cm 3 anodized niobium cube for comparison."
+        "description": "High purity (99.995 % = 4N5) niobium crystals, electrolytic made, as well as a high purity (99.95 % = 3N5) 1 cm 3 anodized niobium cube for comparison.",
+        "width": 5356,
+        "height": 3229,
+        "sourceRevision": "2010-05-29T22:44:56Z",
+        "sourceSha1": "2a1c26afb935e577af289ab5c136489871c34884",
+        "sha256": "1ea55f8cc0da04c4bf697f41731978be02eff72384a8d03d9708f438529fb838",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -4124,7 +4909,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ANiobium_crystals_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 42,
@@ -4152,13 +4943,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/mo.jpg",
+        "label": "몰리브데넘 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "몰리브데넘 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Molybdenum_crystaline_fragment_and_1cm3_cube.jpg",
         "title": "File:Molybdenum crystaline fragment and 1cm3 cube.jpg",
-        "description": "Molybdenum , ebeam remelted macro crystalline fragment. Purity 99.99 % (= \"4N\"), as well as a high purity single crystalline (99.999 % = 5N) 1 cm 3 molybdenum cube for comparison."
+        "description": "Molybdenum , ebeam remelted macro crystalline fragment. Purity 99.99 % (= \"4N\"), as well as a high purity single crystalline (99.999 % = 5N) 1 cm 3 molybdenum cube for comparison.",
+        "width": 5148,
+        "height": 3264,
+        "sourceRevision": "2010-05-22T19:21:58Z",
+        "sourceSha1": "1eae692c95aa8ff96795caac717c34a8138943b1",
+        "sha256": "9c34887a82230cf5c5f92efe9fc972ee0e18a1b3960baa510658ef0af2992b3a",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -4234,7 +5034,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AMolybdenum_crystaline_fragment_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 43,
@@ -4259,7 +5065,27 @@ export const ELEMENTS = [
     "density": 11,
     "discovered": "1937",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/tc-1.jpg",
+        "label": "테크네튬 도금 시료",
+        "phase": "solid",
+        "kind": "coating",
+        "caption": "금박 위에 전착한 Tc-99 시료를 아르곤이 든 앰풀에 보관한 모습. 금박 전체가 테크네튬 덩어리는 아닙니다.",
+        "author": "Marco Cardin",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Technetium-sample-cropped.jpg",
+        "title": "File:Technetium-sample-cropped.jpg",
+        "description": "Technetium sample inside a sealed glass ampoule, filled with argon gas. 6x1 mm goldfoil covered with 99Tc powder (electroplated).",
+        "width": 971,
+        "height": 526,
+        "sourceRevision": "2021-08-31T07:00:59Z",
+        "sourceSha1": "7d0d9b37f8cbd9f9ffbeda7f11ac692a278f0b13",
+        "sha256": "6e1a2b8609840b1ad1e70112448fea4aaaf13a80db935415f437d6fb161d7321",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1534910",
@@ -4309,7 +5135,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ATechnetium-sample-cropped.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 44,
@@ -4337,13 +5169,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/ru.jpg",
+        "label": "루테늄 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "루테늄 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Ruthenium_a_half_bar.jpg",
         "title": "File:Ruthenium a half bar.jpg",
-        "description": "One half of a high-purity (99.99%), electron-beam-remelted ruthenium bar. Size ca. 40 × 15 × 10 mm, weight ca. 44 g."
+        "description": "One half of a high-purity (99.99%), electron-beam-remelted ruthenium bar. Size ca. 40 × 15 × 10 mm, weight ca. 44 g.",
+        "width": 4216,
+        "height": 2916,
+        "sourceRevision": "2010-04-03T13:29:56Z",
+        "sourceSha1": "28cbc4b57c26acb18a2ab7ae83faaeb06c765654",
+        "sha256": "1d8d82d5989262b3bfd7454857e5744b23103a46381ca8c3d752b5cbc9ec38a9",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -4419,7 +5260,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ARuthenium_a_half_bar.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 45,
@@ -4447,13 +5294,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/rh.jpg",
+        "label": "로듐 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "로듐 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) www.pse-mendelejew.de derivative work: Purpy Pupple ( talk )",
         "license": "CC BY-SA 3.0 de",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
         "filePage": "https://commons.wikimedia.org/wiki/File:Rhodium_powder_pressed_melted.jpg",
         "title": "File:Rhodium powder pressed melted.jpg",
-        "description": "the chemical element Rhodium : processing: 1g powder, 1g pressed cylinder, 1 g argon arc remelted pellet."
+        "description": "the chemical element Rhodium : processing: 1g powder, 1g pressed cylinder, 1 g argon arc remelted pellet.",
+        "width": 5280,
+        "height": 2704,
+        "sourceRevision": "2010-10-11T18:03:42Z",
+        "sourceSha1": "c99acc2011b7f32e94ecb30366ca7630dac357e3",
+        "sha256": "c8762ed52e4848fbbb014a7d36fe319dd090dda2ab50fc3820759910c547e9b5",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -4529,7 +5385,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ARhodium_powder_pressed_melted.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 46,
@@ -4557,13 +5419,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/pd.jpg",
+        "label": "팔라듐 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "팔라듐 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Hi-Res Images of Chemical Elements",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Palladium_(46_Pd).jpg",
         "title": "File:Palladium (46 Pd).jpg",
-        "description": "The noble metal palladium is very similar to platinum, and, like platinum, is often used for catalysts and for jewellery. Palladium is more reactive than platinum. Palladium has excellent capability to absorb, store, and then release hydrogen."
+        "description": "The noble metal palladium is very similar to platinum, and, like platinum, is often used for catalysts and for jewellery. Palladium is more reactive than platinum. Palladium has excellent capability to absorb, store, and then release hydrogen.",
+        "width": 730,
+        "height": 730,
+        "sourceRevision": "2013-10-05T13:29:59Z",
+        "sourceSha1": "ecab301ab659bdfdb5d5bd5fae1cf2bf61c20424",
+        "sha256": "02a271d72af987febeefe4112d5a869905b8c805b9f940fedea6999563c17b03",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -4639,7 +5510,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APalladium_(46_Pd).jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 47,
@@ -4667,13 +5544,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/ag.jpg",
+        "label": "은 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "은 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "CC BY-SA 3.0 de",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
         "filePage": "https://commons.wikimedia.org/wiki/File:Silver_crystal.jpg",
         "title": "File:Silver crystal.jpg",
-        "description": "A pure (&gt;99.95%) silver crystal, synthetic electrolytic made with visible dendritic structures. Weight ≈11g. this image was made from 12 single pictures via focus stacking"
+        "description": "A pure (>99.95%) silver crystal, synthetic electrolytic made with visible dendritic structures. Weight ≈11g. this image was made from 12 single pictures via focus stacking",
+        "width": 4428,
+        "height": 3472,
+        "sourceRevision": "2009-07-26T19:17:28Z",
+        "sourceSha1": "6cdabd53e357a383eae16877733dbcb88903c5f5",
+        "sha256": "76a6256da99c3c89bd6720ffeb2b89caf91a2283a1e5deeebd313b7d39be64b1",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -4749,7 +5635,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASilver_crystal.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 48,
@@ -4777,13 +5669,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/cd.jpg",
+        "label": "카드뮴 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "카드뮴 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Cadmium-crystal_bar.jpg",
         "title": "File:Cadmium-crystal bar.jpg",
-        "description": "A crystal cadmium bar . Purity 99.999 %. Made by the flux process . As well as a 1 cm 3 cadmium cube for comparison."
+        "description": "A crystal cadmium bar . Purity 99.999 %. Made by the flux process . As well as a 1 cm 3 cadmium cube for comparison.",
+        "width": 5220,
+        "height": 3378,
+        "sourceRevision": "2010-11-04T02:18:00Z",
+        "sourceSha1": "624b31849b39a84e6a07211f524d10e87195035d",
+        "sha256": "03bc00bdee23f5d6c8d09e8e4f0f99665cd00a995fa2feeadc16514b6317fce6",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -4835,7 +5736,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ACadmium-crystal_bar.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 49,
@@ -4863,13 +5770,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/in.jpg",
+        "label": "인듐 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "인듐 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Nerdtalker",
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Indium.jpg",
         "title": "File:Indium.jpg",
-        "description": "Pure indium bars, roughly one pound each."
+        "description": "Pure indium bars, roughly one pound each.",
+        "width": 2000,
+        "height": 1481,
+        "sourceRevision": "2009-04-25T05:38:25Z",
+        "sourceSha1": "18b40bc94e401d374c90c8385387e4090d7b0948",
+        "sha256": "60fc5bf85fb016fc1dd60b43990a3ab20308251ef0bca9e14cbf6b5d7996229d",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -4945,7 +5861,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AIndium.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 50,
@@ -4973,13 +5895,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/sn.jpg",
+        "label": "주석 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "회색 주석과 흰색 주석 표본.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "CC BY-SA 3.0 de",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
         "filePage": "https://commons.wikimedia.org/wiki/File:Sn-Alpha-Beta.jpg",
         "title": "File:Sn-Alpha-Beta.jpg",
-        "description": "purest tin 99,999 % = 5N, beta (left, white) and alpha (right, gray) allotropes."
+        "description": "purest tin 99,999 % = 5N, beta (left, white) and alpha (right, gray) allotropes.",
+        "width": 2752,
+        "height": 1696,
+        "sourceRevision": "2012-03-18T09:16:59Z",
+        "sourceSha1": "ce8a51ce68ae647688dc827968da58e0f0beb4e4",
+        "sha256": "014418abbd4e84a305b7feb5b78415f3fb4c89205e83cc7d2589e010f29a5bfa",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -5055,7 +5986,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASn-Alpha-Beta.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 51,
@@ -5080,7 +6017,27 @@ export const ELEMENTS = [
     "density": 6.685,
     "discovered": "Ancient",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/sb-1.jpg",
+        "label": "안티모니 결정",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "결정질 안티모니 원소 표본. 금속광택과 갈라진 표면을 볼 수 있습니다.",
+        "author": "Keresluna",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Antimony3.jpg",
+        "title": "File:Antimony3.jpg",
+        "description": "Pure crystalline antimony",
+        "width": 1517,
+        "height": 2020,
+        "sourceRevision": "2021-03-31T23:14:25Z",
+        "sourceSha1": "d2107a77d14eb3aae303f5dc237e13253333cdc4",
+        "sha256": "7091a27e48197e32d0ab112f31bf3a01457b77e9f8d2110dba29787e0fa9186c",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "7203815",
@@ -5154,7 +6111,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AAntimony3.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 52,
@@ -5182,13 +6145,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/te.jpg",
+        "label": "텔루륨 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "텔루륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Unknown author Unknown author",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Tellurium2.jpg",
         "title": "File:Tellurium2.jpg",
-        "description": "Metallic tellurium, diameter 3.5 cm"
+        "description": "Metallic tellurium, diameter 3.5 cm",
+        "width": 1170,
+        "height": 1170,
+        "sourceRevision": "2011-05-09T05:29:19Z",
+        "sourceSha1": "72d89c747956f0a2a4340f3c991b5df1501b7e39",
+        "sha256": "fdc5a69f2b5eba374efb76f8b6c9b47deba56a28e97c58f99c5385d72bf3a8ce",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -5264,7 +6236,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ATellurium2.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 53,
@@ -5292,16 +6270,31 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/i.jpg",
+        "label": "아이오딘 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "아이오딘 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "LHcheM",
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Sample_of_iodine.jpg",
         "title": "File:Sample of iodine.jpg",
-        "description": "sample of iodine"
+        "description": "sample of iodine",
+        "width": 4069,
+        "height": 2115,
+        "sourceRevision": "2012-09-14T09:15:44Z",
+        "sourceSha1": "70da39ff2aa33a37e18d488733ec1c562634f1be",
+        "sha256": "a6ab5fc8cd0eab966064ef4d5e2899b24cce1c58365d5285f98b28994a4100e7",
+        "changes": "표시용 축소본"
       }
     ],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASample_of_iodine.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 54,
@@ -5326,7 +6319,27 @@ export const ELEMENTS = [
     "density": 0.005887,
     "discovered": "1898",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/xe-1.jpg",
+        "label": "고체·액체 제논",
+        "phase": "solid-liquid",
+        "kind": "sample",
+        "caption": "로런스 버클리 국립연구소의 관측 셀 안에 있는 고체와 액체 제논.",
+        "author": "Solypewo",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Solid_and_liquid_xenon.jpg",
+        "title": "File:Solid and liquid xenon.jpg",
+        "description": "Xenon inside an insulated cell located at Lawrence Berkeley National Lab.",
+        "width": 1056,
+        "height": 793,
+        "sourceRevision": "2019-04-16T15:52:15Z",
+        "sourceSha1": "1ef3c9c8af7045fa77a87796bda7cad1ffa4ca10",
+        "sha256": "7c649926499320885e5c059c119f2f71332f01a0941456f2aced01bcf1986a69",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "9012449",
@@ -5400,7 +6413,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASolid_and_liquid_xenon.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 55,
@@ -5428,13 +6447,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/cs.jpg",
+        "label": "세슘 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "세슘 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Dnn87 Contact email: Dnn87 yahoo.dk",
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Cesium.jpg",
         "title": "File:Cesium.jpg",
-        "description": "Cesium/Caesium metal from the Dennis s.k collection."
+        "description": "Cesium/Caesium metal from the Dennis s.k collection.",
+        "width": 4000,
+        "height": 3000,
+        "sourceRevision": "2008-03-10T20:57:53Z",
+        "sourceSha1": "14f289d861039c1a19204a386c0fb786715ec412",
+        "sha256": "f2098a2c81b195dfff52bb1d56d63df73c1035cf2eec2c256ab6ae5a3451a999",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -5510,7 +6538,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ACesium.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 56,
@@ -5538,13 +6572,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/ba.jpg",
+        "label": "바륨 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "바륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Matthias Zepper",
         "license": "Public domain",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Barium_unter_Argon_Schutzgas_Atmosph%C3%A4re.jpg",
         "title": "File:Barium unter Argon Schutzgas Atmosphäre.jpg",
-        "description": "Elementares Barium unter Argon Schutzgas / Pure barium in protective argon gas atmosphere."
+        "description": "Elementares Barium unter Argon Schutzgas / Pure barium in protective argon gas atmosphere.",
+        "width": 793,
+        "height": 460,
+        "sourceRevision": "2009-12-16T03:59:31Z",
+        "sourceSha1": "b69cd17f6c03897369ee6035587a448c1ae3ba3b",
+        "sha256": "2b377e38c971cca7b492ae4ff796b0c23cefa794bbf5cc7126fbd83a165fb1ca",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -5620,7 +6663,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ABarium_unter_Argon_Schutzgas_Atmosph%C3%A4re.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 57,
@@ -5645,7 +6694,27 @@ export const ELEMENTS = [
     "density": 6.15,
     "discovered": "1839",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/la-1.jpg",
+        "label": "란타넘 금속",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "약 1 cm 크기의 란타넘 금속 조각.",
+        "author": "Jurii (Original uploader was Lanthanum-138 at en.wikipedia",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Lanthanum-2.jpg",
+        "title": "File:Lanthanum-2.jpg",
+        "description": "1 cm big piece of pure lanthanum.",
+        "width": 708,
+        "height": 708,
+        "sourceRevision": "2011-05-27T14:03:17Z",
+        "sourceSha1": "301f7bc3a6e630d42491d96095af0b6e5936e7bd",
+        "sha256": "11e9b0e99a926a4c844d220d1dc438b59e4612ddacf67d7abb228699da80f8e8",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1534925",
@@ -5719,7 +6788,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ALanthanum-2.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 58,
@@ -5747,13 +6822,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/ce.jpg",
+        "label": "세륨 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "세륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Jurii",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Cerium2.jpg",
         "title": "File:Cerium2.jpg",
-        "description": "Ultrapure cerium under argon, 1.5 grams. Original size in cm: 1 x 1"
+        "description": "Ultrapure cerium under argon, 1.5 grams. Original size in cm: 1 x 1",
+        "width": 782,
+        "height": 560,
+        "sourceRevision": "2010-01-26T00:54:29Z",
+        "sourceSha1": "bd3dd16ac9718bb7900b20adab3263a7872cf160",
+        "sha256": "78e26688ca1b3150e1aa6cb703ab65718e239e6b41e460171e89da247ec814f0",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -5829,7 +6913,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ACerium2.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 59,
@@ -5854,7 +6944,27 @@ export const ELEMENTS = [
     "density": 6.77,
     "discovered": "1885",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/pr-1.jpg",
+        "label": "프라세오디뮴 금속",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "아르곤 분위기에 보관한 프라세오디뮴 금속 조각.",
+        "author": "Jurii",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Praseodymium.jpg",
+        "title": "File:Praseodymium.jpg",
+        "description": "1.5 grams praseodymium under argon, 0.5 cm big pieces.",
+        "width": 848,
+        "height": 848,
+        "sourceRevision": "2012-09-16T19:20:43Z",
+        "sourceSha1": "1199c6fc5c2ea51443c8fc262dd3f7239ac19971",
+        "sha256": "9c01783bf8001b31513928252f6b4b25c9b3841fae65b1bd651c412ac54a2088",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1538756",
@@ -5928,7 +7038,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APraseodymium.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 60,
@@ -5956,13 +7072,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/nd.jpg",
+        "label": "네오디뮴 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "네오디뮴 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Hi-Res Images of Chemical Elements",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Ultrapure_neodymium_under_argon,_5_grams.jpg",
         "title": "File:Ultrapure neodymium under argon, 5 grams.jpg",
-        "description": "Neodymium is one of the more abundant lanthanoids and has many different applications. It is often used as colorant for glass and ceramic, because its compounds, depending on concentration, can make a beautiful blue, green or red. Another important application is as active medium in Nd:YAG lasers. Nd2Fe14B, neodymium-iron-boron, known as neodymium magnet, is the strongest permanent magnet."
+        "description": "Neodymium is one of the more abundant lanthanoids and has many different applications. It is often used as colorant for glass and ceramic, because its compounds, depending on concentration, can make a beautiful blue, green or red. Another important application is as active medium in Nd:YAG lasers. Nd2Fe14B, neodymium-iron-boron, known as neodymium magnet, is the strongest permanent magnet.",
+        "width": 832,
+        "height": 832,
+        "sourceRevision": "2013-10-06T08:21:40Z",
+        "sourceSha1": "91e25ac65e88025866d8d5c29e29d2c4ff8aff16",
+        "sha256": "464a802ef18bb74024deb98609db0316ad619f6d5857690b79a7617f2840376c",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -6038,7 +7163,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AUltrapure_neodymium_under_argon%2C_5_grams.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 61,
@@ -6063,8 +7194,53 @@ export const ELEMENTS = [
     "density": 7.26,
     "discovered": "1945",
     "predicted": false,
-    "photos": [],
-    "crystals": []
+    "photos": [
+      {
+        "file": "assets/elements/pm-1.png",
+        "label": "프로메튬 금속",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "초기에 분리한 Pm-147 금속 단추 두 개의 기록 사진. 원본에서 크기 비교용 동전을 제외한 부분입니다.",
+        "author": "E. J. Wheelwright",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Promethium_Metal_Buttons_(cropped).png",
+        "title": "File:Promethium Metal Buttons (cropped).png",
+        "description": "First Two Buttons of ¹⁴⁷Pm Metal (penny for scale removed)",
+        "width": 2350,
+        "height": 755,
+        "sourceRevision": "2026-10-04T19:58:07Z",
+        "sourceSha1": "1a6690d3d585c75aa9257a313ffdf81341317fac",
+        "sha256": "fa1a06395818b28560da38b6a1f46bfb3dfc61ab22700591e5917441bac2c235",
+        "changes": "표시용 축소본"
+      },
+      {
+        "file": "assets/elements/pm-2.png",
+        "label": "봉입된 프로메튬",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "석영관에 보관한 프로메튬 금속의 기록 사진. 원문에 기재된 질량은 7 g입니다.",
+        "author": "Oak Ridge National Laboratory",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Promethium.png",
+        "title": "File:Promethium.png",
+        "description": "7 grams of promethium metal in a quartz tube.",
+        "width": 266,
+        "height": 475,
+        "sourceRevision": "2022-01-18T19:30:32Z",
+        "sourceSha1": "03760f0d7531e674edcc2a72b434d2a202354132",
+        "sha256": "d97d006aeba0f39888b2e6176947d83bb15fb57b30ac4f14434e99a8abf722e2",
+        "changes": "표시용 축소본"
+      }
+    ],
+    "crystals": [],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APromethium_Metal_Buttons_(cropped).png",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 62,
@@ -6089,7 +7265,27 @@ export const ELEMENTS = [
     "density": 7.52,
     "discovered": "1879",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/sm-1.jpg",
+        "label": "사마륨 금속",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "사마륨 금속 표본.",
+        "author": "Vano3333",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Samarium.%E1%83%95%E1%83%99.jpg",
+        "title": "File:Samarium.ვკ.jpg",
+        "description": "samarium metal",
+        "width": 960,
+        "height": 960,
+        "sourceRevision": "2022-03-14T15:58:40Z",
+        "sourceSha1": "70af54b3b806b1654e570ff21e5933415198363f",
+        "sha256": "e1420a461bfd9c786efd505e7464190bf4ff758785e7ed2a737a064f38790ec8",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1541290",
@@ -6163,7 +7359,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASamarium.%E1%83%95%E1%83%99.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 63,
@@ -6188,7 +7390,27 @@ export const ELEMENTS = [
     "density": 5.24,
     "discovered": "1901",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/eu-1.jpg",
+        "label": "유로퓸 금속",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "약하게 산화된 유로퓸 금속. 표면의 옅은 노란빛은 산화 상태와 관련되어 있습니다.",
+        "author": "Jurii",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Europium.jpg",
+        "title": "File:Europium.jpg",
+        "description": "Weakly oxidized europium, hence slightly yellowish. 1.5 grams, large piece 0.6 x 1.6 cm.",
+        "width": 804,
+        "height": 804,
+        "sourceRevision": "2011-05-27T14:28:56Z",
+        "sourceSha1": "2917ca702578997c86a768ea3fae69aa1e4fd7c1",
+        "sha256": "64fe72067f946dcd54ee506284370556bf81f105a74f65686e2ab382519803a8",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "9010990",
@@ -6238,7 +7460,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AEuropium.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 64,
@@ -6266,13 +7494,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/gd.jpg",
+        "label": "가돌리늄 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "가돌리늄 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Unknown author Unknown author",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Gadolinium-4.jpg",
         "title": "File:Gadolinium-4.jpg",
-        "description": "Gadolinium"
+        "description": "Gadolinium",
+        "width": 1036,
+        "height": 524,
+        "sourceRevision": "2011-06-30T06:46:41Z",
+        "sourceSha1": "7c97da2c1e911ddf99867276d7da44de405062ce",
+        "sha256": "a24ce016e01673f40f18a2260df88f5f0185cda32fb295456ded7c2fba368922",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -6348,7 +7585,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AGadolinium-4.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 65,
@@ -6373,7 +7616,27 @@ export const ELEMENTS = [
     "density": 8.23,
     "discovered": "1843",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/tb-1.jpg",
+        "label": "터븀 금속",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "터븀 금속 조각.",
+        "author": "W. Oelen",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Terbium2.jpg",
+        "title": "File:Terbium2.jpg",
+        "description": "Terbium metal piece",
+        "width": 667,
+        "height": 288,
+        "sourceRevision": "2011-05-31T12:51:20Z",
+        "sourceSha1": "e22d7e6cc81f3ad55c0e59f234b61a88d468e05f",
+        "sha256": "9e384262b93333db83711ca94864a19e0587e07bdce549c32b8b8cab5741dbb8",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1523620",
@@ -6447,7 +7710,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ATerbium2.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 66,
@@ -6472,7 +7741,27 @@ export const ELEMENTS = [
     "density": 8.55,
     "discovered": "1886",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/dy-1.jpg",
+        "label": "디스프로슘 조각",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "디스프로슘 금속 조각.",
+        "author": "Materialscientist at en.wikipedia",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Dy_chips.jpg",
+        "title": "File:Dy chips.jpg",
+        "description": "Dysprosium chips",
+        "width": 600,
+        "height": 473,
+        "sourceRevision": "2011-04-02T23:36:52Z",
+        "sourceSha1": "c7d1fd4702e9f37c1a4e8b854c950a5b136a64cf",
+        "sha256": "5e92b751140bf6c8ed68602c4e7255ea98a5f4993cb1fc9c4b3a6976bf6fe2e9",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "9010993",
@@ -6546,7 +7835,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ADy_chips.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 67,
@@ -6571,7 +7866,27 @@ export const ELEMENTS = [
     "density": 8.8,
     "discovered": "1878",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/ho-1.jpg",
+        "label": "홀뮴 금속",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "나뭇가지 모양으로 자란 홀뮴 금속에서 떼어낸 조각들.",
+        "author": "brainandforce",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Holmium_shards.jpg",
+        "title": "File:Holmium shards.jpg",
+        "description": "Approximately 20 grams of holmium metal shards from a dendritic piece.",
+        "width": 5312,
+        "height": 2988,
+        "sourceRevision": "2015-06-12T06:13:07Z",
+        "sourceSha1": "c9be0da0144d78e9bf408409634175a302533288",
+        "sha256": "3b5060ee91c5e73bed1949bfc01ce470f52e19c0379ff7be46afc4bb2a7c69da",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "9010994",
@@ -6597,7 +7912,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AHolmium_shards.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 68,
@@ -6625,13 +7946,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/er.jpg",
+        "label": "어븀 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "어븀 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Hi-Res Images of Chemical Elements",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Erbium_(68_Er).jpg",
         "title": "File:Erbium (68 Er).jpg",
-        "description": "Erbium is used for amplifiers in optical fibres and therefore is very important for the internet and the transcontinental data transfer. Erbium oxide can double the intensity of optical light under certain conditions and so allows the signal to travel long distances without fading. This is a good example of how a neglected and mostly unknown element can certainly become very popular for a single special qualification."
+        "description": "Erbium is used for amplifiers in optical fibres and therefore is very important for the internet and the transcontinental data transfer. Erbium oxide can double the intensity of optical light under certain conditions and so allows the signal to travel long distances without fading. This is a good example of how a neglected and mostly unknown element can certainly become very popular for a single special qualification.",
+        "width": 1056,
+        "height": 1056,
+        "sourceRevision": "2013-10-06T08:57:41Z",
+        "sourceSha1": "58485fa069986cbb45fac18db7ab39a86013b97b",
+        "sha256": "eb6c3f539078abf0c985bbcb2facf24e0e90e78432346d83ff3d819419191a2c",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -6683,7 +8013,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AErbium_(68_Er).jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 69,
@@ -6708,7 +8044,27 @@ export const ELEMENTS = [
     "density": 9.32,
     "discovered": "1879",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/tm-1.jpg",
+        "label": "툴륨 결정",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "나뭇가지 모양의 툴륨 결정과 비교용 1 cm³ 금속 정육면체.",
+        "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
+        "license": "FAL",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Thulium_sublimed_dendritic_and_1cm3_cube.jpg",
+        "title": "File:Thulium sublimed dendritic and 1cm3 cube.jpg",
+        "description": "Thulium , sublimed - dendritic , high purity 99.99 % Tm/TREM. As well as an argon arc remelted 1 cm 3 thulium (99,9 %) cube for comparison.",
+        "width": 4765,
+        "height": 3274,
+        "sourceRevision": "2010-12-05T19:34:42Z",
+        "sourceSha1": "c8972f9320f25ed0b3b480d1af000a4414b263c8",
+        "sha256": "fb4b322a0e41918922d2d19ebc12ed7849df60ee8759c705d9e010cdfa3bb8a4",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1540058",
@@ -6758,7 +8114,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AThulium_sublimed_dendritic_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 70,
@@ -6783,7 +8145,27 @@ export const ELEMENTS = [
     "density": 6.9,
     "discovered": "1878",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/yb-1.jpg",
+        "label": "이터븀 금속",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "약 0.5 × 1 cm 크기의 이터븀 금속 표본.",
+        "author": "Jurii",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Ytterbium-3.jpg",
+        "title": "File:Ytterbium-3.jpg",
+        "description": "Ytterbium, 0.5 x 1 cm.",
+        "width": 617,
+        "height": 467,
+        "sourceRevision": "2010-01-26T01:09:17Z",
+        "sourceSha1": "f1b95022dcdf2131fc39fdd7084dc0cb5c4d7f70",
+        "sha256": "b717ad6baaa4d2d7423dc24c8bd2eafc5fc23f2451bc16a33b288f7b8432d50d",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1522989",
@@ -6857,7 +8239,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AYtterbium-3.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 71,
@@ -6882,7 +8270,27 @@ export const ELEMENTS = [
     "density": 9.84,
     "discovered": "1907",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/lu-1.jpg",
+        "label": "루테튬 결정",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "나뭇가지 모양의 루테튬 결정과 비교용 금속 정육면체.",
+        "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
+        "license": "FAL",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Lutetium_sublimed_dendritic_and_1cm3_cube.jpg",
+        "title": "File:Lutetium sublimed dendritic and 1cm3 cube.jpg",
+        "description": "Lutetium , sublimed - dendritic , high purity 99.995 % Lu/TREM. As well as an argon arc remelted 1 cm 3 lutetium (99,9 %) cube for comparison.",
+        "width": 4594,
+        "height": 3149,
+        "sourceRevision": "2010-12-04T17:20:11Z",
+        "sourceSha1": "9dd17f2089752b508f542da3d63af81a13917150",
+        "sha256": "32bd2251c7b9d955933c47678c82beb23257b912b8e899d08a8a68e80102b949",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1538632",
@@ -6956,7 +8364,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ALutetium_sublimed_dendritic_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 72,
@@ -6981,7 +8395,27 @@ export const ELEMENTS = [
     "density": 13.3,
     "discovered": "1923",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/hf-1.jpg",
+        "label": "하프늄 결정봉",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "하프늄 금속 결정봉. 원문에 기재된 순도는 99.9%입니다.",
+        "author": "Alchemist-hp ( www.pse-mendelejew.de )",
+        "license": "CC BY-SA 2.0 de",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Hafnium_crystal.jpg",
+        "title": "File:Hafnium crystal.jpg",
+        "description": "Hafnium crystal bar 99,9% 395g",
+        "width": 518,
+        "height": 728,
+        "sourceRevision": "2009-07-24T08:56:20Z",
+        "sourceSha1": "7deddd3ea4048524928109a7daa902b9324b7386",
+        "sha256": "deeb050988cb0d2d32b2adddfaf2bc6434631921b0d87c724c58ba168349e9f8",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1534929",
@@ -7055,7 +8489,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AHafnium_crystal.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 73,
@@ -7083,13 +8523,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/ta.jpg",
+        "label": "탄탈럼 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "탄탈럼 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Tantalum_single_crystal_and_1cm3_cube.jpg",
         "title": "File:Tantalum single crystal and 1cm3 cube.jpg",
-        "description": "A high purity (99.999 %) tantalum single crystal , made by the floating zone process , some single crystalline fragments of tantalum, as well as a high purity (99.99 % = 4N) 1 cm 3 tantalum cube for comparison."
+        "description": "A high purity (99.999 %) tantalum single crystal , made by the floating zone process , some single crystalline fragments of tantalum, as well as a high purity (99.99 % = 4N) 1 cm 3 tantalum cube for comparison.",
+        "width": 4937,
+        "height": 2991,
+        "sourceRevision": "2010-05-29T22:58:08Z",
+        "sourceSha1": "ce91ac244c3b2290fc449b79b7853365b7ce29c6",
+        "sha256": "253b12cc4fd991037ef740669a68b7f7925275ec43430ce4d713bfd9601016bf",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -7165,7 +8614,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ATantalum_single_crystal_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 74,
@@ -7193,13 +8648,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/w.jpg",
-        "caption": "텅스텐 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
+        "label": "텅스텐 표본",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "텅스텐 결정과 비교용 금속 정육면체. 표면의 여러 색은 부분적인 산화와 관련되어 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Wolfram_evaporated_crystals_and_1cm3_cube.jpg",
         "title": "File:Wolfram evaporated crystals and 1cm3 cube.jpg",
-        "description": "Tungsten rods with evaporated crystals, partially oxidized with colorful tarnish . Purity 99.98 %, as well as a high pure (99.999 % = 5N) 1 cm 3 tungsten cube for comparison."
+        "description": "Tungsten rods with evaporated crystals, partially oxidized with colorful tarnish . Purity 99.98 %, as well as a high pure (99.999 % = 5N) 1 cm 3 tungsten cube for comparison.",
+        "width": 5472,
+        "height": 2988,
+        "sourceRevision": "2010-05-25T20:33:12Z",
+        "sourceSha1": "c3e34b1aab40210ecab6ea0a40ef200dcab609e4",
+        "sha256": "d725f99b120e32f2a1fc74ca1fdef567707b32e0bb666a3b47bb0ebfa8175165",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -7275,7 +8739,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AWolfram_evaporated_crystals_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 75,
@@ -7303,13 +8773,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/re.jpg",
+        "label": "레늄 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "레늄 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Rhenium_single_crystal_bar_and_1cm3_cube.jpg",
         "title": "File:Rhenium single crystal bar and 1cm3 cube.jpg",
-        "description": "Three high-purity forms of rhenium metal: a single crystal (99.999% pure) made by the floating-zone process , an e-beam remelted bar (99.995% pure), and a 1 cm 3 cube (99.99% pure) for comparison."
+        "description": "Three high-purity forms of rhenium metal: a single crystal (99.999% pure) made by the floating-zone process , an e-beam remelted bar (99.995% pure), and a 1 cm 3 cube (99.99% pure) for comparison.",
+        "width": 4848,
+        "height": 3052,
+        "sourceRevision": "2010-09-25T20:30:14Z",
+        "sourceSha1": "859e76f50aec6b186ba96c8be94772e0f88ed0c0",
+        "sha256": "18198827a5c7b2dd48e2030c06c8e7d71f8b706aa70c6445d68194d3db8b9700",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -7385,7 +8864,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ARhenium_single_crystal_bar_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 76,
@@ -7413,13 +8898,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/os.jpg",
+        "label": "오스뮴 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "오스뮴 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Osmium_crystals.jpg",
         "title": "File:Osmium crystals.jpg",
-        "description": "Osmium Os, crystals, purity ≥ 99.99%, 2.2 g. Produced by chemical transport reaction in chlorine gas"
+        "description": "Osmium Os, crystals, purity ≥ 99.99%, 2.2 g. Produced by chemical transport reaction in chlorine gas",
+        "width": 4824,
+        "height": 3099,
+        "sourceRevision": "2010-02-16T22:13:02Z",
+        "sourceSha1": "fed8ed23d3e740860b311c098917fadbbcc928f1",
+        "sha256": "316b507fa3670d78aa3f4641effe08b9b21a2c264f9f198fbb05b7ed01152e41",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -7495,7 +8989,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AOsmium_crystals.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 77,
@@ -7523,13 +9023,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/ir.jpg",
+        "label": "이리듐 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "이리듐 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Hi-Res Images of Chemical Elements",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Iridium_(77_Ir)_(cropped).jpg",
         "title": "File:Iridium (77 Ir) (cropped).jpg",
-        "description": "Iridium is a very hard, heavy, rare and expensive silvery metal and the most noble of all metals. It hardly reacts, but as a fine powder it is flammable. It is used in special alloys and as a catalyst. The meteorite, which 65 million years ago played a key role in the extinction of the dinosaurs, contained relatively much iridium. This can still be observed in sediment layers from this time."
+        "description": "Iridium is a very hard, heavy, rare and expensive silvery metal and the most noble of all metals. It hardly reacts, but as a fine powder it is flammable. It is used in special alloys and as a catalyst. The meteorite, which 65 million years ago played a key role in the extinction of the dinosaurs, contained relatively much iridium. This can still be observed in sediment layers from this time.",
+        "width": 725,
+        "height": 683,
+        "sourceRevision": "2026-03-24T19:29:07Z",
+        "sourceSha1": "7d3444d351c7c931f77585308e5cd17121d44098",
+        "sha256": "60f2b1b63e1ae8bae892c44b362a6536adce0aa464eeb5463f0330254d8c9c47",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -7605,7 +9114,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AIridium_(77_Ir)_(cropped).jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 78,
@@ -7633,13 +9148,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/pt.jpg",
+        "label": "백금 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "백금 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Periodictableru",
         "license": "CC BY 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
         "filePage": "https://commons.wikimedia.org/wiki/File:Platinum_crystals.jpg",
         "title": "File:Platinum crystals.jpg",
-        "description": "Crystals of pure platinum grown by gas phase transport."
+        "description": "Crystals of pure platinum grown by gas phase transport.",
+        "width": 2084,
+        "height": 1460,
+        "sourceRevision": "2010-03-19T00:36:36Z",
+        "sourceSha1": "b63014029cec5dfe53a53e6f4ad005251e8eab7c",
+        "sha256": "31bfa4e0fe5d92d3afee436c1dad3aa8018e6fddf7f71e708cb6f446495add05",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -7691,7 +9215,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APlatinum_crystals.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 79,
@@ -7719,13 +9249,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/au.jpg",
+        "label": "금 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "금 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
         "author": "Alchemist-hp ( talk ) www.pse-mendelejew.de",
         "license": "CC BY-SA 3.0 de",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
         "filePage": "https://commons.wikimedia.org/wiki/File:Gold-crystals.jpg",
         "title": "File:Gold-crystals.jpg",
-        "description": "Synthetic made gold crystals by the chemical transport reaction in chlorine gas. Purity &gt;99.99%"
+        "description": "Synthetic made gold crystals by the chemical transport reaction in chlorine gas. Purity >99.99%",
+        "width": 4788,
+        "height": 3102,
+        "sourceRevision": "2009-08-20T21:16:17Z",
+        "sourceSha1": "b04f489c869e33a6dd47d5d430be8b76b49dd47b",
+        "sha256": "facb3904fd1b8c797065e7858698de36ee38b2ac732ce7d126a2cf8307f8ff66",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -7801,7 +9340,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AGold-crystals.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 80,
@@ -7826,7 +9371,27 @@ export const ELEMENTS = [
     "density": 13.5336,
     "discovered": "Ancient",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/hg-1.jpg",
+        "label": "액체 수은",
+        "phase": "liquid",
+        "kind": "sample",
+        "caption": "흐르는 수은의 금속광택. 수은은 상온에서 액체인 금속입니다.",
+        "author": "Bionerd",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Pouring_liquid_mercury_bionerd.jpg",
+        "title": "File:Pouring liquid mercury bionerd.jpg",
+        "description": "Element mercury (Hg), liquid form.",
+        "width": 1209,
+        "height": 1311,
+        "sourceRevision": "2012-05-13T07:06:48Z",
+        "sourceSha1": "3c549aa2135354e2aae633a6e00ea9656221c5ac",
+        "sha256": "fc671d5eeb7fce6afaf30feeb533b1e85250eed285a2621ca55547b427899db2",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1523182",
@@ -7900,7 +9465,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APouring_liquid_mercury_bionerd.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 81,
@@ -7925,7 +9496,27 @@ export const ELEMENTS = [
     "density": 11.8,
     "discovered": "1861",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/tl-1.jpg",
+        "label": "탈륨 금속",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "아르곤이 든 앰풀 안에 보관한 탈륨 금속 조각.",
+        "author": "W. Oelen",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Thallium_pieces_in_ampoule.jpg",
+        "title": "File:Thallium pieces in ampoule.jpg",
+        "description": "Pieces of very pure thallium in glass ampoule under argon.",
+        "width": 700,
+        "height": 320,
+        "sourceRevision": "2011-06-19T08:41:09Z",
+        "sourceSha1": "0e3cd1e34dbd8f604fcc8d57d85725def40569d3",
+        "sha256": "f0250275c78e03bce202bcbc4a41e465fe871f5e029203d1d958c3d0441e811f",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "2300517",
@@ -7999,7 +9590,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AThallium_pieces_in_ampoule.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 82,
@@ -8027,13 +9624,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/pb.jpg",
-        "caption": "납 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다.",
+        "label": "납 표본",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "납 금속 표본과 정육면체. 원문은 표면에 산화층이 있는 것으로 설명합니다.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Lead_electrolytic_and_1cm3_cube.jpg",
         "title": "File:Lead electrolytic and 1cm3 cube.jpg",
-        "description": "Electrolytically refined pure (99.989 %) superficially oxidized lead nodules and a high purity (99.989 %) 1 cm 3 lead cube for comparison."
+        "description": "Electrolytically refined pure (99.989 %) superficially oxidized lead nodules and a high purity (99.989 %) 1 cm 3 lead cube for comparison.",
+        "width": 5260,
+        "height": 3341,
+        "sourceRevision": "2010-12-20T01:08:05Z",
+        "sourceSha1": "b94dddfe8b6dcb57b1d398ae72219635ab86ef40",
+        "sha256": "43aa69096fc02932094c552d8d02e7a5de6d8e790dc843db5dc3c531114e91a6",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -8109,7 +9715,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ALead_electrolytic_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 83,
@@ -8137,13 +9749,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/bi.jpg",
-        "caption": "비스무트 결정과 금속 표본. 결정 표면의 무지개색은 얇은 산화막의 간섭색입니다.",
+        "label": "비스무트 표본",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "비스무트 결정과 비교용 금속 정육면체.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Bismuth_crystals_and_1cm3_cube.jpg",
         "title": "File:Bismuth crystals and 1cm3 cube.jpg",
-        "description": "The chemical element bismuth as synthetically made crystals. The surface is oxide free. Additionally, a high purity (99.99 %) 1 cm 3 bismuth cube for comparison."
+        "description": "The chemical element bismuth as synthetically made crystals. The surface is oxide free. Additionally, a high purity (99.99 %) 1 cm 3 bismuth cube for comparison.",
+        "width": 4832,
+        "height": 3260,
+        "sourceRevision": "2010-12-20T20:36:44Z",
+        "sourceSha1": "88311b769e489b6d94ee50aae7d92ed9aebd52ed",
+        "sha256": "6724b9aa7e3145281f205f92c9b5a8ef4d974c8d03e216af23a4a5f23a3d3f66",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -8219,7 +9840,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ABismuth_crystals_and_1cm3_cube.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 84,
@@ -8244,7 +9871,27 @@ export const ELEMENTS = [
     "density": 9.32,
     "discovered": "1898",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/po-1.jpg",
+        "label": "폴로늄 증착 시료",
+        "phase": "solid",
+        "kind": "coating",
+        "caption": "황동판 위에 증착한 폴로늄 시료. 보이는 바탕은 황동이며, 폴로늄 덩어리의 외형을 나타내지는 않습니다.",
+        "author": "范皓程",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Polonium_on_brass_sheet.jpg",
+        "title": "File:Polonium on brass sheet.jpg",
+        "description": "Polonium deposited on the brass sheet",
+        "width": 3922,
+        "height": 2959,
+        "sourceRevision": "2026-03-15T23:01:20Z",
+        "sourceSha1": "dd944ab0b27b0db4418f9f43f5c60752f305fb78",
+        "sha256": "41de1c99ad86dee9d95e40ed7b3f8537ff637d56b20f957f01b9b146dbcc1cf8",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1537759",
@@ -8318,7 +9965,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APolonium_on_brass_sheet.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 85,
@@ -8343,8 +9996,34 @@ export const ELEMENTS = [
     "density": 7,
     "discovered": "1940",
     "predicted": false,
-    "photos": [],
-    "crystals": []
+    "photos": [
+      {
+        "file": "assets/elements/at-1.jpg",
+        "label": "아스타틴 시료 주변의 발광",
+        "phase": "not-specified",
+        "kind": "radiation",
+        "caption": "At-211 시료의 방사선이 주변을 이온화하며 내는 파란빛. 아스타틴 자체의 표면색을 보여주는 사진은 아닙니다.",
+        "author": "NuclearAlex",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Glow_from_a_sample_of_astatine_(cropped).jpg",
+        "title": "File:Glow from a sample of astatine (cropped).jpg",
+        "description": "3 gigabecquerels (approx. 40 ng) of astatine-211 were produced and isolated at the Forschungszentrum Jülich at the Institute of Neurosciences and Medicine (INM-5: Nuclear Chemistry). The blue glow stems from the ionisation by the radiation.",
+        "width": 2148,
+        "height": 3248,
+        "sourceRevision": "2026-02-13T14:34:59Z",
+        "sourceSha1": "b797216cd3c773665869ae8d7cad6537e34200c6",
+        "sha256": "cc1db23ba1da41e489e31c345ebda3f7584ff6da7c66effd5bca1519fe3f57e1",
+        "changes": "표시용 축소본"
+      }
+    ],
+    "crystals": [],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "시료 주변의 발광 사진을 수록했습니다. 아스타틴 표면을 보여주는 벌크 표본 사진은 아닙니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AGlow_from_a_sample_of_astatine_(cropped).jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 86,
@@ -8369,8 +10048,34 @@ export const ELEMENTS = [
     "density": 0.00973,
     "discovered": "1900",
     "predicted": false,
-    "photos": [],
-    "crystals": []
+    "photos": [
+      {
+        "file": "assets/elements/rn-1.jpg",
+        "label": "라돈 붕괴 입자 궤적",
+        "phase": "gas",
+        "kind": "tracks",
+        "caption": "라돈을 넣은 안개상자에서 나타난 방사선 입자의 궤적. 흰 선은 응결한 물방울이며, 라돈 기체 자체는 무색입니다.",
+        "author": "Nuledo",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Radon_decay_in_a_cloud_chamber.jpg",
+        "title": "File:Radon decay in a cloud chamber.jpg",
+        "description": "Cloud chamber with cloud tracks created by particles of ionising radiation. (Image taken after injection of radon.)",
+        "width": 1920,
+        "height": 1080,
+        "sourceRevision": "2017-08-29T12:52:59Z",
+        "sourceSha1": "7ac9aa5b49c494b9eb44126796ef7696d2b97b09",
+        "sha256": "70ce8cdc054ba0c8fa2122643df3a88b1d0695087db1c511fe3c9d87344e8915",
+        "changes": "표시용 축소본"
+      }
+    ],
+    "crystals": [],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "붕괴 입자의 궤적 사진을 수록했습니다. 라돈 자체의 액체·고체 표본 사진은 아직 확보하지 못했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ARadon_decay_in_a_cloud_chamber.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 87,
@@ -8396,7 +10101,13 @@ export const ELEMENTS = [
     "discovered": "1939",
     "predicted": false,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/87/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 88,
@@ -8421,7 +10132,27 @@ export const ELEMENTS = [
     "density": 5,
     "discovered": "1898",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/ra-1.jpg",
+        "label": "라듐 도금 시료",
+        "phase": "solid",
+        "kind": "coating",
+        "caption": "작은 구리박에 라듐을 전착하고 보호막을 입힌 시료. 바탕 구리와 보호막은 라듐 자체가 아닙니다.",
+        "author": "grenadier",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Radium226.jpg",
+        "title": "File:Radium226.jpg",
+        "description": "Radium electroplated on a very small sample of copper foil and covered with polyurethane to prevent reaction with the air.",
+        "width": 653,
+        "height": 522,
+        "sourceRevision": "2010-09-18T23:23:42Z",
+        "sourceSha1": "ac0c9b817a6826d6f3031e38881671fbbc73b888",
+        "sha256": "2bf884117e0ce0f5815b081141a912bfe8705d07f5afa801c4cd692944ea27eb",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1509139",
@@ -8447,7 +10178,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ARadium226.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 89,
@@ -8472,7 +10209,27 @@ export const ELEMENTS = [
     "density": 10.07,
     "discovered": "1899",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/ac-1.png",
+        "label": "악티늄 시료 주변의 발광",
+        "phase": "not-specified",
+        "kind": "radiation",
+        "caption": "ORNL의 Ac-225 의료용 시료 주변에서 나타나는 발광. 방사선에 의한 빛이며, 악티늄 금속 표면의 색이 아닙니다.",
+        "author": "Oak Ridge National Laboratory",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Actinium_sample_(31481701837).png",
+        "title": "File:Actinium sample (31481701837).png",
+        "description": "Actinium-225 medical radioisotope held in a v-vial at ORNL. The blue glow comes from the ionization of surrounding air by alpha particles.",
+        "width": 2400,
+        "height": 3000,
+        "sourceRevision": "2020-02-21T12:24:47Z",
+        "sourceSha1": "deeaaa0fcb431d6826e5d60bfca4b72ffe06b9c2",
+        "sha256": "3f2e4a767f70cf354e212787a7506da1e40a130c9d2afb33a8dd2de7763444b9",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "9008458",
@@ -8498,7 +10255,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "방사선에 의한 발광 관측 사진을 수록했습니다. 악티늄 금속 표면 사진은 아직 확보하지 못했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AActinium_sample_(31481701837).png",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 90,
@@ -8526,13 +10289,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/th.jpg",
+        "label": "토륨 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "토륨 금속 표본.",
         "author": "Alchemist-hp ( talk ) ( www.pse-mendelejew.de )",
         "license": "FAL",
-        "licenseUrl": "https://artlibre.org/licence/lal/en",
+        "licenseUrl": "https://artlibre.org/licence/lal/en/",
         "filePage": "https://commons.wikimedia.org/wiki/File:Thorium_sample_0.1g.jpg",
         "title": "File:Thorium sample 0.1g.jpg",
-        "description": "Thorium sample (99.9 % = 3N), thin sheet under argon in a glass ampoule, ca. 0.1 g"
+        "description": "Thorium sample (99.9 % = 3N), thin sheet under argon in a glass ampoule, ca. 0.1 g",
+        "width": 1000,
+        "height": 667,
+        "sourceRevision": "2011-04-27T00:06:51Z",
+        "sourceSha1": "8329dc2223bffdaf6eead08549f81b00ff407375",
+        "sha256": "8adc6bac3db5209ad6de8a03b8ce9f57f071b2cfa89c21053cff61eddae31e39",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -8608,7 +10380,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AThorium_sample_0.1g.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 91,
@@ -8633,7 +10411,27 @@ export const ELEMENTS = [
     "density": 15.37,
     "discovered": "1913",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/pa-1.jpg",
+        "label": "프로트악티늄의 방사선 기록",
+        "phase": "not-specified",
+        "kind": "radiation",
+        "caption": "Pa-233 시료의 자체 방사선으로 기록한 사진. 가운데 어두운 원이 시료이며, 눈으로 본 금속 표면색을 나타내지는 않습니다.",
+        "author": "ENERGY.GOV",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Protactinium-233.jpg",
+        "title": "File:Protactinium-233.jpg",
+        "description": "This sample of Protactinium-233 (dark circular area in the photo) was photographed in the light from its own radioactive emission (the lighter area) at the National Reactor Testing Station in Idaho.",
+        "width": 3200,
+        "height": 2542,
+        "sourceRevision": "2014-10-06T08:48:14Z",
+        "sourceSha1": "9cdaf7fd44f411f22a44a9a360221b491576fb12",
+        "sha256": "afda7dc50c7bf23943b484a730b8b3032a2a76bf86d2ba70b3072afe46f912eb",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1537782",
@@ -8683,7 +10481,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "방사선 기록 사진을 수록했습니다. 재사용 조건이 확인된 순수 금속 표면 사진은 아직 확보하지 못했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AProtactinium-233.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 92,
@@ -8711,13 +10515,22 @@ export const ELEMENTS = [
     "photos": [
       {
         "file": "assets/elements/u.jpg",
+        "label": "우라늄 표본",
+        "phase": "solid",
+        "kind": "sample",
         "caption": "우라늄 금속 표본.",
         "author": "Unspecified",
         "license": "Public domain",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
         "filePage": "https://commons.wikimedia.org/wiki/File:HEUraniumC.jpg",
         "title": "File:HEUraniumC.jpg",
-        "description": "A billet of highly enriched uranium that was recovered from scrap processed at the Y-12 National Security Complex Plant. Original and unrotated."
+        "description": "A billet of highly enriched uranium that was recovered from scrap processed at the Y-12 National Security Complex Plant. Original and unrotated.",
+        "width": 3200,
+        "height": 2560,
+        "sourceRevision": "2007-06-23T16:17:53Z",
+        "sourceSha1": "b8ac4e761d4f2e65d999aa8fdd51ee41ec959377",
+        "sha256": "b489b852bffbd8d3f6e25fb7b476c2947c5f65ab2609379e97b81a12e66cdeb5",
+        "changes": "표시용 축소본"
       }
     ],
     "crystals": [
@@ -8793,7 +10606,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AHEUraniumC.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 93,
@@ -8818,7 +10637,27 @@ export const ELEMENTS = [
     "density": 20.25,
     "discovered": "1940",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/np-1.jpg",
+        "label": "피복된 넵투늄 시료",
+        "phase": "solid",
+        "kind": "encapsulated",
+        "caption": "니켈로 피복된 넵투늄 구형 시료. 바깥에 보이는 표면은 니켈이므로 넵투늄 자체의 색으로 보아서는 안 됩니다.",
+        "author": "Los Alamos National Lab.",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Np_sphere.jpg",
+        "title": "File:Np sphere.jpg",
+        "description": "This nickel-clad neptunium sphere was used to experimentally determine the critical mass of Np at Los Alamos National Lab.",
+        "width": 466,
+        "height": 296,
+        "sourceRevision": "2010-03-16T19:37:46Z",
+        "sourceSha1": "420134664392783f06cdbfa20c0ca2524a3af3ce",
+        "sha256": "84f8d52253849570da5bd628e3c2da5a7277fe48955b4e9baa6c297179be3fa8",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "9008585",
@@ -8892,7 +10731,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "니켈 피복 시료 사진을 수록했습니다. 출처가 서로 충돌하는 금속 단추 이미지는 제외했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ANp_sphere.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 94,
@@ -8917,7 +10762,27 @@ export const ELEMENTS = [
     "density": 19.84,
     "discovered": "1940",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/pu-1.jpg",
+        "label": "플루토늄 금속",
+        "phase": "solid",
+        "kind": "sample",
+        "caption": "로스앨러모스 국립연구소의 플루토늄 금속 고리 기록 사진.",
+        "author": "Los Alamos National Laboratory",
+        "license": "Attribution",
+        "licenseUrl": "assets/licenses/LANL-NOTICE.txt",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Plutonium_ring.jpg",
+        "title": "File:Plutonium ring.jpg",
+        "description": "A weapons-grade ring of electrorefined plutonium, typical of the rings refined at Los Alamos and sent to Rocky Flats for fabrication. The ring has a purity of 99.96%, weighs 5.3 kg, and is approx 11 cm in diameter. It is enough plutonium for one bomb core. The ring shape helps with criticality safety (less concentrated material).",
+        "width": 1295,
+        "height": 1231,
+        "sourceRevision": "2016-02-14T22:19:38Z",
+        "sourceSha1": "3afd71ec78d2dbe08e2252d9bee6ece88f891851",
+        "sha256": "63f1dc6bb21dfa3e849115a1a51946547f787fc49a88dd132d91a8222a5c4f56",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "1525989",
@@ -8991,7 +10856,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APlutonium_ring.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 95,
@@ -9016,7 +10887,27 @@ export const ELEMENTS = [
     "density": 13.69,
     "discovered": "1944",
     "predicted": false,
-    "photos": [],
+    "photos": [
+      {
+        "file": "assets/elements/am-1.jpg",
+        "label": "아메리슘 시료 확대",
+        "phase": "not-specified",
+        "kind": "source",
+        "caption": "현미경으로 촬영한 Am-241 원반 시료. 원문에는 화학 형태가 명시되어 있지 않습니다.",
+        "author": "Bionerd",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Americium_microscope.jpg",
+        "title": "File:Americium microscope.jpg",
+        "description": "A small disc of Am-241 under the microscope.",
+        "width": 1024,
+        "height": 981,
+        "sourceRevision": "2010-08-28T19:02:12Z",
+        "sourceSha1": "70a5d53b137821d3480514005ecc3a8071429d99",
+        "sha256": "a8c1c5a3884babb87a3e516f6b8d9c2ad89a69f733530a1c5df74d5a16c3a830",
+        "changes": "표시용 축소본"
+      }
+    ],
     "crystals": [
       {
         "id": "9008461",
@@ -9066,7 +10957,13 @@ export const ELEMENTS = [
         "flags": "has coordinates",
         "license": "CC0 1.0"
       }
-    ]
+    ],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "Am-241 원반의 확대 사진을 수록했습니다. 화학 형태가 명시되지 않아 순수 원소 표본으로 집계하지 않습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AAmericium_microscope.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 96,
@@ -9092,7 +10989,13 @@ export const ELEMENTS = [
     "discovered": "1944",
     "predicted": false,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "source-pending",
+      "note": "퀴륨 금속은 실제로 연구된 물질입니다. 원소 금속 사진의 원본과 공개 재사용 조건을 아직 확보하지 못했습니다. 산화물이나 용액 사진으로 대체하지 않습니다.",
+      "reference": "https://www.ornl.gov/publication/electronic-structure-elemental-curium-studied-photoemission",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 97,
@@ -9117,8 +11020,34 @@ export const ELEMENTS = [
     "density": 14,
     "discovered": "1949",
     "predicted": false,
-    "photos": [],
-    "crystals": []
+    "photos": [
+      {
+        "file": "assets/elements/bk-1.jpg",
+        "label": "버클륨 금속 확대",
+        "phase": "solid",
+        "kind": "micrograph",
+        "caption": "처음 분리한 버클륨 금속의 현미경 사진. 금속 조각의 너비는 약 100 µm입니다.",
+        "author": "Oak Ridge National Laboratory , US Department of Energy",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Berkelium_metal.jpg",
+        "title": "File:Berkelium metal.jpg",
+        "description": "A photomicrograph of the first isolated bulk (1.7 micrograms) sample of berkelium. The lump is 100 μm across.",
+        "width": 283,
+        "height": 179,
+        "sourceRevision": "2011-05-27T14:42:37Z",
+        "sourceSha1": "e87fac8daee55d8d20fba7d32799188a1d8050ea",
+        "sha256": "23813c75ee3da51916d78bf76480b75a38385cdb892af96846185eccb4ced23d",
+        "changes": "표시용 축소본"
+      }
+    ],
+    "crystals": [],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ABerkelium_metal.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 98,
@@ -9143,8 +11072,34 @@ export const ELEMENTS = [
     "density": null,
     "discovered": "1950",
     "predicted": false,
-    "photos": [],
-    "crystals": []
+    "photos": [
+      {
+        "file": "assets/elements/cf-1.jpg",
+        "label": "캘리포늄 금속",
+        "phase": "solid",
+        "kind": "micrograph",
+        "caption": "Cf-249 금속 원반의 확대 기록 사진. 원문에 기재된 시료 질량은 10 mg입니다.",
+        "author": "United States Department of Energy (see File:Einsteinium.jpg )",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:Californium.jpg",
+        "title": "File:Californium.jpg",
+        "description": "A disc of californium metal ( 249 Cf, 10 mg). The source implies that the disc has a diameter about twice the thickness of a typical pin, or on the order of 1 mm.",
+        "width": 176,
+        "height": 158,
+        "sourceRevision": "2011-05-27T14:46:25Z",
+        "sourceSha1": "5eed308168ac45120788eb292bfe9de4d974e47d",
+        "sha256": "0f1cd52f0c21add99c1ebccab0a76c2d13602940df4743e9aaf2761a0dcda390",
+        "changes": "표시용 축소본"
+      }
+    ],
+    "crystals": [],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ACalifornium.jpg",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 99,
@@ -9169,8 +11124,34 @@ export const ELEMENTS = [
     "density": null,
     "discovered": "1952",
     "predicted": false,
-    "photos": [],
-    "crystals": []
+    "photos": [
+      {
+        "file": "assets/elements/es-1.jpg",
+        "label": "아인슈타이늄 시료의 발광",
+        "phase": "solid",
+        "kind": "radiation",
+        "caption": "약 300 µg의 Es-253 고체 시료가 내는 방사선 관련 발광의 흑백 기록 사진. 인위적으로 색을 입힌 사진을 사용하지 않았습니다.",
+        "author": "Haire, R. G. , Department of Energy",
+        "license": "Public domain",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "filePage": "https://commons.wikimedia.org/wiki/File:EinsteiniumGlow.JPG",
+        "title": "File:EinsteiniumGlow.JPG",
+        "description": "Self‐luminescence arising from the intense radiation from ~300 µg of 253 Es solid in a quartz cone (9 mm diameter). The heat and radiation accompanying decay often generate detrimental effects in studies of Es.",
+        "width": 496,
+        "height": 728,
+        "sourceRevision": "2011-05-01T10:17:32Z",
+        "sourceSha1": "b5c724330f2382d013e425580d207a7db090328a",
+        "sha256": "dcb8a562cba7ee31de76d01dce9bbbd889f8748596df12d43951954caddb53b1",
+        "changes": "표시용 축소본"
+      }
+    ],
+    "crystals": [],
+    "photoReview": {
+      "status": "reviewed",
+      "note": "실제 고체 시료의 흑백 발광 기록을 수록했습니다. 색을 입힌 파생 이미지로 표면색을 추정하지 않습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AEinsteiniumGlow.JPG",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 100,
@@ -9196,7 +11177,13 @@ export const ELEMENTS = [
     "discovered": "1952",
     "predicted": false,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/100/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 101,
@@ -9222,7 +11209,13 @@ export const ELEMENTS = [
     "discovered": "1955",
     "predicted": false,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/101/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 102,
@@ -9248,7 +11241,13 @@ export const ELEMENTS = [
     "discovered": "1957",
     "predicted": false,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/102/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 103,
@@ -9274,7 +11273,13 @@ export const ELEMENTS = [
     "discovered": "1961",
     "predicted": false,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/103/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 104,
@@ -9300,7 +11305,13 @@ export const ELEMENTS = [
     "discovered": "1964",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/104/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 105,
@@ -9326,7 +11337,13 @@ export const ELEMENTS = [
     "discovered": "1967",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/105/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 106,
@@ -9352,7 +11369,13 @@ export const ELEMENTS = [
     "discovered": "1974",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/106/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 107,
@@ -9378,7 +11401,13 @@ export const ELEMENTS = [
     "discovered": "1976",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/107/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 108,
@@ -9404,7 +11433,13 @@ export const ELEMENTS = [
     "discovered": "1984",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/108/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 109,
@@ -9430,7 +11465,13 @@ export const ELEMENTS = [
     "discovered": "1982",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/109/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 110,
@@ -9456,7 +11497,13 @@ export const ELEMENTS = [
     "discovered": "1994",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/110/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 111,
@@ -9482,7 +11529,13 @@ export const ELEMENTS = [
     "discovered": "1994",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/111/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 112,
@@ -9508,7 +11561,13 @@ export const ELEMENTS = [
     "discovered": "1996",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/112/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 113,
@@ -9534,7 +11593,13 @@ export const ELEMENTS = [
     "discovered": "2004",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/113/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 114,
@@ -9560,7 +11625,13 @@ export const ELEMENTS = [
     "discovered": "1998",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/114/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 115,
@@ -9586,7 +11657,13 @@ export const ELEMENTS = [
     "discovered": "2003",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/115/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 116,
@@ -9612,7 +11689,13 @@ export const ELEMENTS = [
     "discovered": "2000",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/116/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 117,
@@ -9638,7 +11721,13 @@ export const ELEMENTS = [
     "discovered": "2010",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/117/",
+      "reviewed": "2026-10-10"
+    }
   },
   {
     "z": 118,
@@ -9664,6 +11753,12 @@ export const ELEMENTS = [
     "discovered": "2006",
     "predicted": true,
     "photos": [],
-    "crystals": []
+    "crystals": [],
+    "photoReview": {
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/118/",
+      "reviewed": "2026-10-10"
+    }
   }
 ];

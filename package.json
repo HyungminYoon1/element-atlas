@@ -8,6 +8,7 @@
     "dev": "node tools/serve.mjs",
     "test": "node --test",
     "check": "node tools/check.mjs",
-    "import:data": "node tools/import-data.mjs"
+    "import:data": "node tools/import-data.mjs",
+    "import:photos": "node tools/import-photos.mjs"
   }
 }

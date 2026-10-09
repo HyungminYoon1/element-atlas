@@ -1,0 +1,1804 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-10-10",
+  "criteria": "실제 촬영 자료만 수록. 원소 표본·도금·현미경 사진과 방전·방사선·피복·형태 미기재 자료를 구분. 실제 표면 사진의 미확보를 물리적으로 볼 수 없음으로 해석하지 않음.",
+  "elements": [
+    {
+      "z": 1,
+      "symbol": "H",
+      "status": "reviewed",
+      "note": "액체 수소 속 입자 궤적 사진을 수록했습니다. 액체의 표면·색을 관찰하는 사진과는 구분됩니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ALiquid_hydrogen_bubblechamber.jpg",
+      "photos": [
+        {
+          "title": "File:Liquid hydrogen bubblechamber.jpg",
+          "phase": "liquid",
+          "kind": "tracks",
+          "label": "액체 수소 속 입자 궤적",
+          "caption": "액체 수소 기포상자 사진. 선처럼 보이는 것은 입자가 지나가며 만든 기포이며, 수소 자체의 색이 아닙니다."
+        }
+      ]
+    },
+    {
+      "z": 2,
+      "symbol": "He",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ALiquid_Helium.jpg",
+      "photos": [
+        {
+          "title": "File:Liquid Helium.jpg",
+          "phase": "liquid",
+          "kind": "sample",
+          "label": "액체 헬륨",
+          "caption": "4.2 K에서 끓는 액체 헬륨. 투명한 액체 표면을 용기 안에서 볼 수 있습니다."
+        },
+        {
+          "title": "File:Liquid helium Rollin film.jpg",
+          "phase": "liquid",
+          "kind": "sample",
+          "label": "초유체 헬륨",
+          "caption": "초유체 헬륨이 컵 바깥으로 흘러 방울을 만드는 모습. 벽을 타는 얇은 막 자체는 눈에 보이지 않습니다."
+        }
+      ]
+    },
+    {
+      "z": 3,
+      "symbol": "Li",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APurified_lithium_in_an_ampoule_under_argon%2C_dark_background.png",
+      "photos": [
+        {
+          "title": "File:Purified lithium in an ampoule under argon, dark background.png",
+          "file": "assets/elements/li.png",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "리튬 표본",
+          "caption": "리튬 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 4,
+      "symbol": "Be",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ABe-140g.jpg",
+      "photos": [
+        {
+          "title": "File:Be-140g.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "베릴륨 결정",
+          "caption": "베릴륨 금속의 결정질 조각. 원문에 기재된 질량은 140 g 이상입니다."
+        }
+      ]
+    },
+    {
+      "z": 5,
+      "symbol": "B",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ABoron_R105.jpg",
+      "photos": [
+        {
+          "title": "File:Boron R105.jpg",
+          "file": "assets/elements/b.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "붕소 표본",
+          "caption": "붕소 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 6,
+      "symbol": "C",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AGraphite-and-diamond-with-scale.jpg",
+      "photos": [
+        {
+          "title": "File:Graphite-and-diamond-with-scale.jpg",
+          "file": "assets/elements/c.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "탄소 표본",
+          "caption": "흑연과 다이아몬드. 같은 탄소지만 원자 결합 배열에 따라 모양과 성질이 다릅니다."
+        }
+      ]
+    },
+    {
+      "z": 7,
+      "symbol": "N",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AFluessiger_Stickstoff.jpg",
+      "photos": [
+        {
+          "title": "File:Fluessiger Stickstoff.jpg",
+          "phase": "liquid",
+          "kind": "sample",
+          "label": "액체 질소",
+          "caption": "용기 안의 액체 질소. 주변의 흰 안개는 차가워진 공기 중 수분으로, 질소의 색이 아닙니다."
+        }
+      ]
+    },
+    {
+      "z": 8,
+      "symbol": "O",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ALiquid_oxygen_in_a_beaker_4.jpg",
+      "photos": [
+        {
+          "title": "File:Liquid oxygen in a beaker 4.jpg",
+          "phase": "liquid",
+          "kind": "sample",
+          "label": "액체 산소",
+          "caption": "유리 용기 안의 옅은 파란색 액체 산소. 미 공군의 액체 산소 검사 사진입니다."
+        }
+      ]
+    },
+    {
+      "z": 9,
+      "symbol": "F",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AFluoro_liquido_a_-196%C2%B0C_1.jpg",
+      "photos": [
+        {
+          "title": "File:Fluoro liquido a -196°C 1.jpg",
+          "phase": "liquid",
+          "kind": "sample",
+          "label": "액체 플루오린",
+          "caption": "−196°C에서 촬영한 액체 플루오린. 상온의 기체와 다른 상태를 관찰할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 10,
+      "symbol": "Ne",
+      "status": "reviewed",
+      "note": "무색 기체의 방전 사진을 수록했습니다. 액체·고체 상태의 재사용 가능한 실물 사진은 아직 확보하지 못했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ANeon-glow.jpg",
+      "photos": [
+        {
+          "title": "File:Neon-glow.jpg",
+          "phase": "gas",
+          "kind": "discharge",
+          "label": "네온 방전광",
+          "caption": "네온 기체를 전기적으로 들뜨게 했을 때의 방전광. 평소 네온 기체는 무색입니다."
+        }
+      ]
+    },
+    {
+      "z": 11,
+      "symbol": "Na",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ANa_(Sodium).jpg",
+      "photos": [
+        {
+          "title": "File:Na (Sodium).jpg",
+          "file": "assets/elements/na.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "나트륨 표본",
+          "caption": "나트륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 12,
+      "symbol": "Mg",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ACSIRO_ScienceImage_2893_Crystalised_magnesium.jpg",
+      "photos": [
+        {
+          "title": "File:CSIRO ScienceImage 2893 Crystalised magnesium.jpg",
+          "file": "assets/elements/mg.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "마그네슘 표본",
+          "caption": "마그네슘 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 13,
+      "symbol": "Al",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AAluminium_bar_surface_etched.jpg",
+      "photos": [
+        {
+          "title": "File:Aluminium bar surface etched.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "알루미늄 표면 조직",
+          "caption": "알루미늄 막대의 표면을 처리해 드러낸 결정 조직. 초점이 다른 여러 실제 사진을 합성한 초점 스택 사진입니다."
+        }
+      ]
+    },
+    {
+      "z": 14,
+      "symbol": "Si",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AA_piece_of_zone_refined_silicon.JPG",
+      "photos": [
+        {
+          "title": "File:A piece of zone refined silicon.JPG",
+          "file": "assets/elements/si.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "규소 표본",
+          "caption": "규소 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 15,
+      "symbol": "P",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APhosphor_rot.jpg",
+      "photos": [
+        {
+          "title": "File:Phosphor rot.jpg",
+          "file": "assets/elements/p.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "인 표본",
+          "caption": "붉은 인 표본. 인의 동소체 가운데 적린입니다."
+        }
+      ]
+    },
+    {
+      "z": 16,
+      "symbol": "S",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASulfur_-_El_Desierto_mine%2C_San_Pablo_de_Napa%2C_Daniel_Campos_Province%2C_Potos%C3%AD%2C_Bolivia.jpg",
+      "photos": [
+        {
+          "title": "File:Sulfur - El Desierto mine, San Pablo de Napa, Daniel Campos Province, Potosí, Bolivia.jpg",
+          "file": "assets/elements/s.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "황 표본",
+          "caption": "천연 황 결정 표본. 노란색 부분은 원소 황이며 바탕의 암석과 구분해야 합니다."
+        }
+      ]
+    },
+    {
+      "z": 17,
+      "symbol": "Cl",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AChlorine_in_bottle.jpg",
+      "photos": [
+        {
+          "title": "File:Chlorine in bottle.jpg",
+          "phase": "gas",
+          "kind": "sample",
+          "label": "염소 기체",
+          "caption": "유리병 안의 황록색 염소 기체. 용기와 기체의 색을 구분해 보세요."
+        },
+        {
+          "title": "File:Die chemischen elemente cl.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "고체 염소",
+          "caption": "−150°C에서 촬영한 고체 염소. 액화보다 더 낮은 온도에서는 고체가 됩니다."
+        }
+      ]
+    },
+    {
+      "z": 18,
+      "symbol": "Ar",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AArgon_ice_1.jpg",
+      "photos": [
+        {
+          "title": "File:Argon ice 1.jpg",
+          "phase": "solid-liquid",
+          "kind": "sample",
+          "label": "고체·액체 아르곤",
+          "caption": "녹고 있는 약 2 cm 크기의 고체 아르곤. 아래쪽에는 녹은 액체가 흐릅니다. 원본에 대비·선명도 보정이 적용되어 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 19,
+      "symbol": "K",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APotassium-2.jpg",
+      "photos": [
+        {
+          "title": "File:Potassium-2.jpg",
+          "file": "assets/elements/k.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "칼륨 표본",
+          "caption": "칼륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 20,
+      "symbol": "Ca",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ACalcium_crystals_in_ampoule_cropped.jpg",
+      "photos": [
+        {
+          "title": "File:Calcium crystals in ampoule cropped.jpg",
+          "file": "assets/elements/ca.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "칼슘 표본",
+          "caption": "칼슘 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 21,
+      "symbol": "Sc",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AScandium_sublimed_dendritic_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Scandium sublimed dendritic and 1cm3 cube.jpg",
+          "file": "assets/elements/sc.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "스칸듐 표본",
+          "caption": "스칸듐 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 22,
+      "symbol": "Ti",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ATitan-crystal_bar.JPG",
+      "photos": [
+        {
+          "title": "File:Titan-crystal bar.JPG",
+          "file": "assets/elements/ti.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "타이타늄 표본",
+          "caption": "타이타늄 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 23,
+      "symbol": "V",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AVanadium_crystal_bar_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Vanadium crystal bar and 1cm3 cube.jpg",
+          "file": "assets/elements/v.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "바나듐 표본",
+          "caption": "바나듐 결정봉과 금속 정육면체. 일부 표면의 녹색은 공기 중에서 생긴 산화층입니다."
+        }
+      ]
+    },
+    {
+      "z": 24,
+      "symbol": "Cr",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AChromium_crystals_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Chromium crystals and 1cm3 cube.jpg",
+          "file": "assets/elements/cr.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "크로뮴 표본",
+          "caption": "크로뮴 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 25,
+      "symbol": "Mn",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AManganese_electrolytic_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Manganese electrolytic and 1cm3 cube.jpg",
+          "file": "assets/elements/mn.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "망가니즈 표본",
+          "caption": "망가니즈 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 26,
+      "symbol": "Fe",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AIron_electrolytic_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Iron electrolytic and 1cm3 cube.jpg",
+          "file": "assets/elements/fe.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "철 표본",
+          "caption": "철 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 27,
+      "symbol": "Co",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AKobalt_electrolytic_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Kobalt electrolytic and 1cm3 cube.jpg",
+          "file": "assets/elements/co.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "코발트 표본",
+          "caption": "코발트 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 28,
+      "symbol": "Ni",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ANickel_electrolytic_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Nickel electrolytic and 1cm3 cube.jpg",
+          "file": "assets/elements/ni.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "니켈 표본",
+          "caption": "니켈 금속 표본과 비교용 정육면체. 틈에 보이는 녹색 부분은 니켈염으로 금속 자체의 색이 아닙니다."
+        }
+      ]
+    },
+    {
+      "z": 29,
+      "symbol": "Cu",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ANatCopper.jpg",
+      "photos": [
+        {
+          "title": "File:NatCopper.jpg",
+          "file": "assets/elements/cu.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "구리 표본",
+          "caption": "자연 구리 표본. 표면 상태와 산화 정도에 따라 보이는 색이 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 30,
+      "symbol": "Zn",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AZinc_fragment_sublimed_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Zinc fragment sublimed and 1cm3 cube.jpg",
+          "file": "assets/elements/zn.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "아연 표본",
+          "caption": "아연 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 31,
+      "symbol": "Ga",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AGallium_bar_cracked_open_to_show_crystal_structure_with_scale_1.png",
+      "photos": [
+        {
+          "title": "File:Gallium bar cracked open to show crystal structure with scale 1.png",
+          "file": "assets/elements/ga.png",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "갈륨 표본",
+          "caption": "갈륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 32,
+      "symbol": "Ge",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APolycrystalline-germanium.jpg",
+      "photos": [
+        {
+          "title": "File:Polycrystalline-germanium.jpg",
+          "file": "assets/elements/ge.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "저마늄 표본",
+          "caption": "저마늄 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 33,
+      "symbol": "As",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AArsen_1a.jpg",
+      "photos": [
+        {
+          "title": "File:Arsen 1a.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "자연 비소",
+          "caption": "자연에서 생성된 원소 비소 표본. 비소를 포함한 다른 광물이나 화합물과 구분됩니다."
+        }
+      ]
+    },
+    {
+      "z": 34,
+      "symbol": "Se",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASeBlackRed.jpg",
+      "photos": [
+        {
+          "title": "File:SeBlackRed.jpg",
+          "file": "assets/elements/se.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "셀레늄 표본",
+          "caption": "셀레늄의 서로 다른 동소체 표본."
+        }
+      ]
+    },
+    {
+      "z": 35,
+      "symbol": "Br",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ABromine_vial_in_acrylic_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Bromine vial in acrylic cube.jpg",
+          "file": "assets/elements/br.jpg",
+          "phase": "liquid",
+          "kind": "sample",
+          "label": "브로민 표본",
+          "caption": "용기에 봉입된 브로민. 상온에서 적갈색 액체인 원소입니다."
+        }
+      ]
+    },
+    {
+      "z": 36,
+      "symbol": "Kr",
+      "status": "reviewed",
+      "note": "무색 기체의 방전 사진을 수록했습니다. 액체·고체 상태의 재사용 가능한 실물 사진은 아직 확보하지 못했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AKrypton-glow.jpg",
+      "photos": [
+        {
+          "title": "File:Krypton-glow.jpg",
+          "phase": "gas",
+          "kind": "discharge",
+          "label": "크립톤 방전광",
+          "caption": "크립톤 기체의 방전광. 발광 색은 들뜬 원자가 내는 빛이며, 평소 기체의 색이 아닙니다."
+        }
+      ]
+    },
+    {
+      "z": 37,
+      "symbol": "Rb",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ARb5.JPG",
+      "photos": [
+        {
+          "title": "File:Rb5.JPG",
+          "file": "assets/elements/rb.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "루비듐 표본",
+          "caption": "루비듐 금속을 봉입한 앰풀. 표본에 보이는 여러 색의 일부는 초과산화물입니다."
+        }
+      ]
+    },
+    {
+      "z": 38,
+      "symbol": "Sr",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AStrontium_destilled_crystals.jpg",
+      "photos": [
+        {
+          "title": "File:Strontium destilled crystals.jpg",
+          "file": "assets/elements/sr.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "스트론튬 표본",
+          "caption": "스트론튬 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 39,
+      "symbol": "Y",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AYttrium_sublimed_dendritic_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Yttrium sublimed dendritic and 1cm3 cube.jpg",
+          "file": "assets/elements/y.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "이트륨 표본",
+          "caption": "이트륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 40,
+      "symbol": "Zr",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AZirconium_crystal_bar_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Zirconium crystal bar and 1cm3 cube.jpg",
+          "file": "assets/elements/zr.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "지르코늄 표본",
+          "caption": "지르코늄 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 41,
+      "symbol": "Nb",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ANiobium_crystals_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Niobium crystals and 1cm3 cube.jpg",
+          "file": "assets/elements/nb.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "나이오븀 표본",
+          "caption": "나이오븀 결정과 비교용 정육면체. 정육면체에는 양극산화 표면 처리가 적용되어 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 42,
+      "symbol": "Mo",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AMolybdenum_crystaline_fragment_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Molybdenum crystaline fragment and 1cm3 cube.jpg",
+          "file": "assets/elements/mo.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "몰리브데넘 표본",
+          "caption": "몰리브데넘 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 43,
+      "symbol": "Tc",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ATechnetium-sample-cropped.jpg",
+      "photos": [
+        {
+          "title": "File:Technetium-sample-cropped.jpg",
+          "phase": "solid",
+          "kind": "coating",
+          "label": "테크네튬 도금 시료",
+          "caption": "금박 위에 전착한 Tc-99 시료를 아르곤이 든 앰풀에 보관한 모습. 금박 전체가 테크네튬 덩어리는 아닙니다."
+        }
+      ]
+    },
+    {
+      "z": 44,
+      "symbol": "Ru",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ARuthenium_a_half_bar.jpg",
+      "photos": [
+        {
+          "title": "File:Ruthenium a half bar.jpg",
+          "file": "assets/elements/ru.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "루테늄 표본",
+          "caption": "루테늄 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 45,
+      "symbol": "Rh",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ARhodium_powder_pressed_melted.jpg",
+      "photos": [
+        {
+          "title": "File:Rhodium powder pressed melted.jpg",
+          "file": "assets/elements/rh.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "로듐 표본",
+          "caption": "로듐 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 46,
+      "symbol": "Pd",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APalladium_(46_Pd).jpg",
+      "photos": [
+        {
+          "title": "File:Palladium (46 Pd).jpg",
+          "file": "assets/elements/pd.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "팔라듐 표본",
+          "caption": "팔라듐 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 47,
+      "symbol": "Ag",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASilver_crystal.jpg",
+      "photos": [
+        {
+          "title": "File:Silver crystal.jpg",
+          "file": "assets/elements/ag.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "은 표본",
+          "caption": "은 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 48,
+      "symbol": "Cd",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ACadmium-crystal_bar.jpg",
+      "photos": [
+        {
+          "title": "File:Cadmium-crystal bar.jpg",
+          "file": "assets/elements/cd.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "카드뮴 표본",
+          "caption": "카드뮴 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 49,
+      "symbol": "In",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AIndium.jpg",
+      "photos": [
+        {
+          "title": "File:Indium.jpg",
+          "file": "assets/elements/in.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "인듐 표본",
+          "caption": "인듐 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 50,
+      "symbol": "Sn",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASn-Alpha-Beta.jpg",
+      "photos": [
+        {
+          "title": "File:Sn-Alpha-Beta.jpg",
+          "file": "assets/elements/sn.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "주석 표본",
+          "caption": "회색 주석과 흰색 주석 표본."
+        }
+      ]
+    },
+    {
+      "z": 51,
+      "symbol": "Sb",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AAntimony3.jpg",
+      "photos": [
+        {
+          "title": "File:Antimony3.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "안티모니 결정",
+          "caption": "결정질 안티모니 원소 표본. 금속광택과 갈라진 표면을 볼 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 52,
+      "symbol": "Te",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ATellurium2.jpg",
+      "photos": [
+        {
+          "title": "File:Tellurium2.jpg",
+          "file": "assets/elements/te.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "텔루륨 표본",
+          "caption": "텔루륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 53,
+      "symbol": "I",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASample_of_iodine.jpg",
+      "photos": [
+        {
+          "title": "File:Sample of iodine.jpg",
+          "file": "assets/elements/i.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "아이오딘 표본",
+          "caption": "아이오딘 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 54,
+      "symbol": "Xe",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASolid_and_liquid_xenon.jpg",
+      "photos": [
+        {
+          "title": "File:Solid and liquid xenon.jpg",
+          "phase": "solid-liquid",
+          "kind": "sample",
+          "label": "고체·액체 제논",
+          "caption": "로런스 버클리 국립연구소의 관측 셀 안에 있는 고체와 액체 제논."
+        }
+      ]
+    },
+    {
+      "z": 55,
+      "symbol": "Cs",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ACesium.jpg",
+      "photos": [
+        {
+          "title": "File:Cesium.jpg",
+          "file": "assets/elements/cs.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "세슘 표본",
+          "caption": "세슘 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 56,
+      "symbol": "Ba",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ABarium_unter_Argon_Schutzgas_Atmosph%C3%A4re.jpg",
+      "photos": [
+        {
+          "title": "File:Barium unter Argon Schutzgas Atmosphäre.jpg",
+          "file": "assets/elements/ba.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "바륨 표본",
+          "caption": "바륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 57,
+      "symbol": "La",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ALanthanum-2.jpg",
+      "photos": [
+        {
+          "title": "File:Lanthanum-2.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "란타넘 금속",
+          "caption": "약 1 cm 크기의 란타넘 금속 조각."
+        }
+      ]
+    },
+    {
+      "z": 58,
+      "symbol": "Ce",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ACerium2.jpg",
+      "photos": [
+        {
+          "title": "File:Cerium2.jpg",
+          "file": "assets/elements/ce.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "세륨 표본",
+          "caption": "세륨 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 59,
+      "symbol": "Pr",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APraseodymium.jpg",
+      "photos": [
+        {
+          "title": "File:Praseodymium.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "프라세오디뮴 금속",
+          "caption": "아르곤 분위기에 보관한 프라세오디뮴 금속 조각."
+        }
+      ]
+    },
+    {
+      "z": 60,
+      "symbol": "Nd",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AUltrapure_neodymium_under_argon%2C_5_grams.jpg",
+      "photos": [
+        {
+          "title": "File:Ultrapure neodymium under argon, 5 grams.jpg",
+          "file": "assets/elements/nd.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "네오디뮴 표본",
+          "caption": "네오디뮴 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 61,
+      "symbol": "Pm",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APromethium_Metal_Buttons_(cropped).png",
+      "photos": [
+        {
+          "title": "File:Promethium Metal Buttons (cropped).png",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "프로메튬 금속",
+          "caption": "초기에 분리한 Pm-147 금속 단추 두 개의 기록 사진. 원본에서 크기 비교용 동전을 제외한 부분입니다."
+        },
+        {
+          "title": "File:Promethium.png",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "봉입된 프로메튬",
+          "caption": "석영관에 보관한 프로메튬 금속의 기록 사진. 원문에 기재된 질량은 7 g입니다."
+        }
+      ]
+    },
+    {
+      "z": 62,
+      "symbol": "Sm",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ASamarium.%E1%83%95%E1%83%99.jpg",
+      "photos": [
+        {
+          "title": "File:Samarium.ვკ.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "사마륨 금속",
+          "caption": "사마륨 금속 표본."
+        }
+      ]
+    },
+    {
+      "z": 63,
+      "symbol": "Eu",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AEuropium.jpg",
+      "photos": [
+        {
+          "title": "File:Europium.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "유로퓸 금속",
+          "caption": "약하게 산화된 유로퓸 금속. 표면의 옅은 노란빛은 산화 상태와 관련되어 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 64,
+      "symbol": "Gd",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AGadolinium-4.jpg",
+      "photos": [
+        {
+          "title": "File:Gadolinium-4.jpg",
+          "file": "assets/elements/gd.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "가돌리늄 표본",
+          "caption": "가돌리늄 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 65,
+      "symbol": "Tb",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ATerbium2.jpg",
+      "photos": [
+        {
+          "title": "File:Terbium2.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "터븀 금속",
+          "caption": "터븀 금속 조각."
+        }
+      ]
+    },
+    {
+      "z": 66,
+      "symbol": "Dy",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ADy_chips.jpg",
+      "photos": [
+        {
+          "title": "File:Dy chips.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "디스프로슘 조각",
+          "caption": "디스프로슘 금속 조각."
+        }
+      ]
+    },
+    {
+      "z": 67,
+      "symbol": "Ho",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AHolmium_shards.jpg",
+      "photos": [
+        {
+          "title": "File:Holmium shards.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "홀뮴 금속",
+          "caption": "나뭇가지 모양으로 자란 홀뮴 금속에서 떼어낸 조각들."
+        }
+      ]
+    },
+    {
+      "z": 68,
+      "symbol": "Er",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AErbium_(68_Er).jpg",
+      "photos": [
+        {
+          "title": "File:Erbium (68 Er).jpg",
+          "file": "assets/elements/er.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "어븀 표본",
+          "caption": "어븀 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 69,
+      "symbol": "Tm",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AThulium_sublimed_dendritic_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Thulium sublimed dendritic and 1cm3 cube.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "툴륨 결정",
+          "caption": "나뭇가지 모양의 툴륨 결정과 비교용 1 cm³ 금속 정육면체."
+        }
+      ]
+    },
+    {
+      "z": 70,
+      "symbol": "Yb",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AYtterbium-3.jpg",
+      "photos": [
+        {
+          "title": "File:Ytterbium-3.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "이터븀 금속",
+          "caption": "약 0.5 × 1 cm 크기의 이터븀 금속 표본."
+        }
+      ]
+    },
+    {
+      "z": 71,
+      "symbol": "Lu",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ALutetium_sublimed_dendritic_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Lutetium sublimed dendritic and 1cm3 cube.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "루테튬 결정",
+          "caption": "나뭇가지 모양의 루테튬 결정과 비교용 금속 정육면체."
+        }
+      ]
+    },
+    {
+      "z": 72,
+      "symbol": "Hf",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AHafnium_crystal.jpg",
+      "photos": [
+        {
+          "title": "File:Hafnium crystal.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "하프늄 결정봉",
+          "caption": "하프늄 금속 결정봉. 원문에 기재된 순도는 99.9%입니다."
+        }
+      ]
+    },
+    {
+      "z": 73,
+      "symbol": "Ta",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ATantalum_single_crystal_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Tantalum single crystal and 1cm3 cube.jpg",
+          "file": "assets/elements/ta.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "탄탈럼 표본",
+          "caption": "탄탈럼 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 74,
+      "symbol": "W",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AWolfram_evaporated_crystals_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Wolfram evaporated crystals and 1cm3 cube.jpg",
+          "file": "assets/elements/w.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "텅스텐 표본",
+          "caption": "텅스텐 결정과 비교용 금속 정육면체. 표면의 여러 색은 부분적인 산화와 관련되어 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 75,
+      "symbol": "Re",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ARhenium_single_crystal_bar_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Rhenium single crystal bar and 1cm3 cube.jpg",
+          "file": "assets/elements/re.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "레늄 표본",
+          "caption": "레늄 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 76,
+      "symbol": "Os",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AOsmium_crystals.jpg",
+      "photos": [
+        {
+          "title": "File:Osmium crystals.jpg",
+          "file": "assets/elements/os.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "오스뮴 표본",
+          "caption": "오스뮴 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 77,
+      "symbol": "Ir",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AIridium_(77_Ir)_(cropped).jpg",
+      "photos": [
+        {
+          "title": "File:Iridium (77 Ir) (cropped).jpg",
+          "file": "assets/elements/ir.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "이리듐 표본",
+          "caption": "이리듐 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 78,
+      "symbol": "Pt",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APlatinum_crystals.jpg",
+      "photos": [
+        {
+          "title": "File:Platinum crystals.jpg",
+          "file": "assets/elements/pt.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "백금 표본",
+          "caption": "백금 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 79,
+      "symbol": "Au",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AGold-crystals.jpg",
+      "photos": [
+        {
+          "title": "File:Gold-crystals.jpg",
+          "file": "assets/elements/au.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "금 표본",
+          "caption": "금 원소 표본. 표면의 색과 질감은 표본의 가공·산화 상태에 따라 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "z": 80,
+      "symbol": "Hg",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APouring_liquid_mercury_bionerd.jpg",
+      "photos": [
+        {
+          "title": "File:Pouring liquid mercury bionerd.jpg",
+          "phase": "liquid",
+          "kind": "sample",
+          "label": "액체 수은",
+          "caption": "흐르는 수은의 금속광택. 수은은 상온에서 액체인 금속입니다."
+        }
+      ]
+    },
+    {
+      "z": 81,
+      "symbol": "Tl",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AThallium_pieces_in_ampoule.jpg",
+      "photos": [
+        {
+          "title": "File:Thallium pieces in ampoule.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "탈륨 금속",
+          "caption": "아르곤이 든 앰풀 안에 보관한 탈륨 금속 조각."
+        }
+      ]
+    },
+    {
+      "z": 82,
+      "symbol": "Pb",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ALead_electrolytic_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Lead electrolytic and 1cm3 cube.jpg",
+          "file": "assets/elements/pb.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "납 표본",
+          "caption": "납 금속 표본과 정육면체. 원문은 표면에 산화층이 있는 것으로 설명합니다."
+        }
+      ]
+    },
+    {
+      "z": 83,
+      "symbol": "Bi",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ABismuth_crystals_and_1cm3_cube.jpg",
+      "photos": [
+        {
+          "title": "File:Bismuth crystals and 1cm3 cube.jpg",
+          "file": "assets/elements/bi.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "비스무트 표본",
+          "caption": "비스무트 결정과 비교용 금속 정육면체."
+        }
+      ]
+    },
+    {
+      "z": 84,
+      "symbol": "Po",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APolonium_on_brass_sheet.jpg",
+      "photos": [
+        {
+          "title": "File:Polonium on brass sheet.jpg",
+          "phase": "solid",
+          "kind": "coating",
+          "label": "폴로늄 증착 시료",
+          "caption": "황동판 위에 증착한 폴로늄 시료. 보이는 바탕은 황동이며, 폴로늄 덩어리의 외형을 나타내지는 않습니다."
+        }
+      ]
+    },
+    {
+      "z": 85,
+      "symbol": "At",
+      "status": "reviewed",
+      "note": "시료 주변의 발광 사진을 수록했습니다. 아스타틴 표면을 보여주는 벌크 표본 사진은 아닙니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AGlow_from_a_sample_of_astatine_(cropped).jpg",
+      "photos": [
+        {
+          "title": "File:Glow from a sample of astatine (cropped).jpg",
+          "phase": "not-specified",
+          "kind": "radiation",
+          "label": "아스타틴 시료 주변의 발광",
+          "caption": "At-211 시료의 방사선이 주변을 이온화하며 내는 파란빛. 아스타틴 자체의 표면색을 보여주는 사진은 아닙니다."
+        }
+      ]
+    },
+    {
+      "z": 86,
+      "symbol": "Rn",
+      "status": "reviewed",
+      "note": "붕괴 입자의 궤적 사진을 수록했습니다. 라돈 자체의 액체·고체 표본 사진은 아직 확보하지 못했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ARadon_decay_in_a_cloud_chamber.jpg",
+      "photos": [
+        {
+          "title": "File:Radon decay in a cloud chamber.jpg",
+          "phase": "gas",
+          "kind": "tracks",
+          "label": "라돈 붕괴 입자 궤적",
+          "caption": "라돈을 넣은 안개상자에서 나타난 방사선 입자의 궤적. 흰 선은 응결한 물방울이며, 라돈 기체 자체는 무색입니다."
+        }
+      ]
+    },
+    {
+      "z": 87,
+      "symbol": "Fr",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/87/",
+      "photos": []
+    },
+    {
+      "z": 88,
+      "symbol": "Ra",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ARadium226.jpg",
+      "photos": [
+        {
+          "title": "File:Radium226.jpg",
+          "phase": "solid",
+          "kind": "coating",
+          "label": "라듐 도금 시료",
+          "caption": "작은 구리박에 라듐을 전착하고 보호막을 입힌 시료. 바탕 구리와 보호막은 라듐 자체가 아닙니다."
+        }
+      ]
+    },
+    {
+      "z": 89,
+      "symbol": "Ac",
+      "status": "reviewed",
+      "note": "방사선에 의한 발광 관측 사진을 수록했습니다. 악티늄 금속 표면 사진은 아직 확보하지 못했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AActinium_sample_(31481701837).png",
+      "photos": [
+        {
+          "title": "File:Actinium sample (31481701837).png",
+          "phase": "not-specified",
+          "kind": "radiation",
+          "label": "악티늄 시료 주변의 발광",
+          "caption": "ORNL의 Ac-225 의료용 시료 주변에서 나타나는 발광. 방사선에 의한 빛이며, 악티늄 금속 표면의 색이 아닙니다."
+        }
+      ]
+    },
+    {
+      "z": 90,
+      "symbol": "Th",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AThorium_sample_0.1g.jpg",
+      "photos": [
+        {
+          "title": "File:Thorium sample 0.1g.jpg",
+          "file": "assets/elements/th.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "토륨 표본",
+          "caption": "토륨 금속 표본."
+        }
+      ]
+    },
+    {
+      "z": 91,
+      "symbol": "Pa",
+      "status": "reviewed",
+      "note": "방사선 기록 사진을 수록했습니다. 재사용 조건이 확인된 순수 금속 표면 사진은 아직 확보하지 못했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AProtactinium-233.jpg",
+      "photos": [
+        {
+          "title": "File:Protactinium-233.jpg",
+          "phase": "not-specified",
+          "kind": "radiation",
+          "label": "프로트악티늄의 방사선 기록",
+          "caption": "Pa-233 시료의 자체 방사선으로 기록한 사진. 가운데 어두운 원이 시료이며, 눈으로 본 금속 표면색을 나타내지는 않습니다."
+        }
+      ]
+    },
+    {
+      "z": 92,
+      "symbol": "U",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AHEUraniumC.jpg",
+      "photos": [
+        {
+          "title": "File:HEUraniumC.jpg",
+          "file": "assets/elements/u.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "우라늄 표본",
+          "caption": "우라늄 금속 표본."
+        }
+      ]
+    },
+    {
+      "z": 93,
+      "symbol": "Np",
+      "status": "reviewed",
+      "note": "니켈 피복 시료 사진을 수록했습니다. 출처가 서로 충돌하는 금속 단추 이미지는 제외했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ANp_sphere.jpg",
+      "photos": [
+        {
+          "title": "File:Np sphere.jpg",
+          "phase": "solid",
+          "kind": "encapsulated",
+          "label": "피복된 넵투늄 시료",
+          "caption": "니켈로 피복된 넵투늄 구형 시료. 바깥에 보이는 표면은 니켈이므로 넵투늄 자체의 색으로 보아서는 안 됩니다."
+        }
+      ]
+    },
+    {
+      "z": 94,
+      "symbol": "Pu",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3APlutonium_ring.jpg",
+      "photos": [
+        {
+          "title": "File:Plutonium ring.jpg",
+          "phase": "solid",
+          "kind": "sample",
+          "label": "플루토늄 금속",
+          "caption": "로스앨러모스 국립연구소의 플루토늄 금속 고리 기록 사진."
+        }
+      ]
+    },
+    {
+      "z": 95,
+      "symbol": "Am",
+      "status": "reviewed",
+      "note": "Am-241 원반의 확대 사진을 수록했습니다. 화학 형태가 명시되지 않아 순수 원소 표본으로 집계하지 않습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AAmericium_microscope.jpg",
+      "photos": [
+        {
+          "title": "File:Americium microscope.jpg",
+          "phase": "not-specified",
+          "kind": "source",
+          "label": "아메리슘 시료 확대",
+          "caption": "현미경으로 촬영한 Am-241 원반 시료. 원문에는 화학 형태가 명시되어 있지 않습니다."
+        }
+      ]
+    },
+    {
+      "z": 96,
+      "symbol": "Cm",
+      "status": "source-pending",
+      "note": "퀴륨 금속은 실제로 연구된 물질입니다. 원소 금속 사진의 원본과 공개 재사용 조건을 아직 확보하지 못했습니다. 산화물이나 용액 사진으로 대체하지 않습니다.",
+      "reference": "https://www.ornl.gov/publication/electronic-structure-elemental-curium-studied-photoemission",
+      "photos": []
+    },
+    {
+      "z": 97,
+      "symbol": "Bk",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ABerkelium_metal.jpg",
+      "photos": [
+        {
+          "title": "File:Berkelium metal.jpg",
+          "phase": "solid",
+          "kind": "micrograph",
+          "label": "버클륨 금속 확대",
+          "caption": "처음 분리한 버클륨 금속의 현미경 사진. 금속 조각의 너비는 약 100 µm입니다."
+        }
+      ]
+    },
+    {
+      "z": 98,
+      "symbol": "Cf",
+      "status": "reviewed",
+      "note": "표본 사진의 원문·재사용 조건을 검토했습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3ACalifornium.jpg",
+      "photos": [
+        {
+          "title": "File:Californium.jpg",
+          "phase": "solid",
+          "kind": "micrograph",
+          "label": "캘리포늄 금속",
+          "caption": "Cf-249 금속 원반의 확대 기록 사진. 원문에 기재된 시료 질량은 10 mg입니다."
+        }
+      ]
+    },
+    {
+      "z": 99,
+      "symbol": "Es",
+      "status": "reviewed",
+      "note": "실제 고체 시료의 흑백 발광 기록을 수록했습니다. 색을 입힌 파생 이미지로 표면색을 추정하지 않습니다.",
+      "reference": "https://commons.wikimedia.org/wiki/File%3AEinsteiniumGlow.JPG",
+      "photos": [
+        {
+          "title": "File:EinsteiniumGlow.JPG",
+          "phase": "solid",
+          "kind": "radiation",
+          "label": "아인슈타이늄 시료의 발광",
+          "caption": "약 300 µg의 Es-253 고체 시료가 내는 방사선 관련 발광의 흑백 기록 사진. 인위적으로 색을 입힌 사진을 사용하지 않았습니다."
+        }
+      ]
+    },
+    {
+      "z": 100,
+      "symbol": "Fm",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/100/",
+      "photos": []
+    },
+    {
+      "z": 101,
+      "symbol": "Md",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/101/",
+      "photos": []
+    },
+    {
+      "z": 102,
+      "symbol": "No",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/102/",
+      "photos": []
+    },
+    {
+      "z": 103,
+      "symbol": "Lr",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/103/",
+      "photos": []
+    },
+    {
+      "z": 104,
+      "symbol": "Rf",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/104/",
+      "photos": []
+    },
+    {
+      "z": 105,
+      "symbol": "Db",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/105/",
+      "photos": []
+    },
+    {
+      "z": 106,
+      "symbol": "Sg",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/106/",
+      "photos": []
+    },
+    {
+      "z": 107,
+      "symbol": "Bh",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/107/",
+      "photos": []
+    },
+    {
+      "z": 108,
+      "symbol": "Hs",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/108/",
+      "photos": []
+    },
+    {
+      "z": 109,
+      "symbol": "Mt",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/109/",
+      "photos": []
+    },
+    {
+      "z": 110,
+      "symbol": "Ds",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/110/",
+      "photos": []
+    },
+    {
+      "z": 111,
+      "symbol": "Rg",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/111/",
+      "photos": []
+    },
+    {
+      "z": 112,
+      "symbol": "Cn",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/112/",
+      "photos": []
+    },
+    {
+      "z": 113,
+      "symbol": "Nh",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/113/",
+      "photos": []
+    },
+    {
+      "z": 114,
+      "symbol": "Fl",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/114/",
+      "photos": []
+    },
+    {
+      "z": 115,
+      "symbol": "Mc",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/115/",
+      "photos": []
+    },
+    {
+      "z": 116,
+      "symbol": "Lv",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/116/",
+      "photos": []
+    },
+    {
+      "z": 117,
+      "symbol": "Ts",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/117/",
+      "photos": []
+    },
+    {
+      "z": 118,
+      "symbol": "Og",
+      "status": "no-visible-bulk",
+      "note": "눈으로 관찰할 크기의 순수 원소 표본 사진이 확인되지 않았습니다. 원소가 든 광석이나 연구 장비 사진으로 대체하지 않습니다.",
+      "reference": "https://periodic-table.rsc.org/element/118/",
+      "photos": []
+    }
+  ]
+}
