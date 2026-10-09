@@ -10,6 +10,8 @@ LOCAL BROWSER: isolated Playwright CLI Chromium; all 118 element dialogs, every 
 
 SOURCE SCOPE: element-atlas architecture/requirements/README, relevant importer/UI and manifest/checks VERIFIED. Entire 118-ID photo review and 100 original-file metadata/license records VERIFIED. Subject identification and scientific physical purity PARTIAL, based on cited photographers/institutions rather than a physical assay. Missing sources and observation boundaries are documented in `docs/photo-coverage.md`. No AI specimen pictures, unsafe home chemistry procedures or new hosting/storage/ranking providers were added. Unrelated app/game code and independent expert science review NOT_INSPECTED/NOT_RUN. REMOTE_CI and LIVE are recorded separately after publication.
 
+LOCAL PHASE CARD FOLLOW-UP: all six condensed-state cards now open the exact pictured photograph, including solid chlorine and superfluid helium rather than their element's first view. The entire 118-dialog/100-image/three-viewport flow was rerun and passed after this selection correction. The thumbnail screenshot is visually unchanged.
+
 ## 2026-10-10 REMOTE_CI / LIVE
 
 Implementation commit `0313fed2ef693c0e21e8510c04add90f1ca93019`: [verify/deploy PASS](https://github.com/HyungminYoon1/element-atlas/actions/runs/37947822165). Public Pages uses the verified GitHub origin; normal pushes only.
