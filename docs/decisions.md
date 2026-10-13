@@ -1,5 +1,14 @@
 # Decisions
 
+## D07 — Question-owned next and latest selected import / 2026-10-13
+
+- Context: approved edge audit reproduced an old next skipping an unanswered question, composing key scoring, unhandled file read failure, and late imports overwriting a newer import or confirmed reset.
+- Options: disable imports during reads; queue all selected files; accept only the latest selected file and invalidate on confirmed reset; timing debounce.
+- Decision: next owns and consumes its answered question once; composing/229 keyboard events do not answer; catch file.text rejection with a preservation notice; selection generation allows only the latest outstanding read to apply. Confirmed reset invalidates pending reads. Cancelled reset retains prior state.
+- Rationale: respect the user's newest selection/reset without changing the existing confirmation, schema, file limit, scheduling counters, scientific snapshot, memory-only storage-failure behavior or own-key isolation.
+- Affected: dist/src/app.js, test/edge-cases.test.js, tools/edge-browser.mjs, docs/edge-cases-20261013.md and verification.
+- Follow-up: File.text failures/races are explicit isolated-browser fixtures. Browser regression harness is manual, not current CI. New read-failure notice screenshot is output/playwright/edge-20261013/read-failure-1440.png. No retention/provider/architecture change.
+
 ## D06 — 조건 연결 도전과 기록 불러오기 부분 성공 / 2026-10-13
 
 Context: 자동 구현 승인에서 기본 개념을 여러 조건의 추론으로 확장합니다. 파일 불러오기 후 저장이 실패해도 성공 안내가 오류를 덮는 경로를 실제 별도 QA 브라우저에서 먼저 재현했습니다. Options: 기존 퀴즈/기록 구조 교체, 서술 AI 채점, 각 단원의 별도 추론 선택과 근거 비교. Decision: 자체 제작 10개 도전을 learning.js/learning-ui.js에 두고 선택/해설은 현재 페이지의 최대 10항목 Map에만 보관합니다. 첫 선택 후 해설을 비교하고 단원을 오갈 때 그 선택을 다시 보여줍니다. 기존 10개 기본 확인 수와 퀴즈 성적/저장/JSON에 합산하지 않습니다. save의 성공 여부에 따라 불러오기 안내를 저장 성공/화면만 성공으로 구분합니다.
