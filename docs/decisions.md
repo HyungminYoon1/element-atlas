@@ -1,5 +1,11 @@
 # Decisions
 
+## D06 — 조건 연결 도전과 기록 불러오기 부분 성공 / 2026-10-13
+
+Context: 자동 구현 승인에서 기본 개념을 여러 조건의 추론으로 확장합니다. 파일 불러오기 후 저장이 실패해도 성공 안내가 오류를 덮는 경로를 실제 별도 QA 브라우저에서 먼저 재현했습니다. Options: 기존 퀴즈/기록 구조 교체, 서술 AI 채점, 각 단원의 별도 추론 선택과 근거 비교. Decision: 자체 제작 10개 도전을 learning.js/learning-ui.js에 두고 선택/해설은 현재 페이지의 최대 10항목 Map에만 보관합니다. 첫 선택 후 해설을 비교하고 단원을 오갈 때 그 선택을 다시 보여줍니다. 기존 10개 기본 확인 수와 퀴즈 성적/저장/JSON에 합산하지 않습니다. save의 성공 여부에 따라 불러오기 안내를 저장 성공/화면만 성공으로 구분합니다.
+
+Rationale: 입자 수·점유·결합·구조·관측의 연결을 연습하고 기록 복원 결과를 오해하지 않게 합니다. 사용자 원본 키/118원소 수치/사진/결정/라이선스/기존 퀴즈 의미를 유지합니다. Affected: learning.js, learning-ui.js, app.js, tools/qa-import.js, README, learning-provenance/verification. Review: QA 실패 주입은 격리 브라우저에서만 합니다. 도전은 원자·이온의 점유 모형과 지정 조건의 학습 사례이며 벌크 자성/모든 원소 최신 연구를 보증하지 않습니다. 통합 검토에서 O²⁻를 안정한 단독 기체로 오해하지 않도록 전자배치 모형이라는 조건을 명시했습니다. 새 저장소·외부 제공자·비용·공유 요약 접근이 없습니다.
+
 ## D05 — Rule-first learning without a new persistence boundary
 
 Context: the element catalog gives facts and quizzes but no starting sequence. Options: another fact dump, a decorative atomic animation, or an authored explanation-to-inference path. Decision: ten Korean units linking particle counts, quantum states, electron configuration, bonding and conditional bulk properties; each has reasoning, a scoped rule, a counterexample/boundary, an original check and source/quiz/element links. Add a bounded 1–30 atom/curated-ion occupancy workbench and the analytic nonrelativistic hydrogen 1s radial distribution. Use measured neutral configurations, preserving Cr/Cu exceptions; remove higher-n electrons first for curated positive ions. Do not depict orbital occupancy as a trajectory or make universal claims from the octet/trend rules.

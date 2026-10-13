@@ -1,9 +1,9 @@
-import {LESSONS,ION_OPTIONS,orbitalState,hydrogenProbability} from './learning.js';
+import {LESSONS,APPLICATIONS,ION_OPTIONS,orbitalState,hydrogenProbability} from './learning.js';
 import {ELEMENTS} from './elements.js';
 const node=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
 const button=(text,action,cls)=>{const b=node('button',cls,text);b.type='button';b.addEventListener('click',action);return b;};
 export function mountLearning(root,{onElement,onPractice}){
-  let current=0;const completed=new Set();
+  let current=0;const completed=new Set(),applications=new Map();
   const intro=node('div','learn-intro');intro.append(node('p','eyebrow','CHEMISTRY · FROM RULES TO MATTER'),node('h1',null,'원소를 외우기 전에, 규칙부터'),node('p','lead','전자들이 놓일 수 있는 상태가 결합을 만들고, 결합과 구조가 물질의 성질로 이어집니다. 처음이라면 1번부터 읽고, 짧은 질문으로 확인하세요.'));
   const chain=node('ol','reason-chain');for(const text of ['입자 수','전자 상태','전자배치','결합','구조·물성'])chain.append(node('li',null,text));intro.append(chain);
   const layout=node('div','learn-layout'),nav=node('nav','lesson-nav'),article=node('article','lesson-article');nav.setAttribute('aria-label','화학 학습 순서');article.setAttribute('aria-live','polite');
@@ -21,6 +21,9 @@ export function mountLearning(root,{onElement,onPractice}){
     const check=node('section','lesson-check');check.append(node('p','eyebrow','CHECK YOUR REASONING'),node('h3',null,l.check.prompt));
     const feedback=node('p','check-feedback'),choices=node('div','learn-choices');feedback.setAttribute('role','status');
     l.check.options.forEach((text,k)=>choices.append(button(text,()=>{if(k===l.check.answer){completed.add(l.id);progress.textContent=`이 화면에서 확인한 개념 ${completed.size} / ${LESSONS.length}`;feedback.className='check-feedback correct';feedback.textContent='맞습니다. '+l.check.reason;}else{feedback.className='check-feedback';feedback.textContent='다시 생각해보세요. '+l.check.reason;}},'learn-choice')));check.append(choices,feedback);article.append(check);
+    const task=APPLICATIONS[l.id],application=node('section','lesson-check application-check'),options=node('div','learn-choices'),response=node('p','check-feedback');response.setAttribute('role','status');application.append(node('p','eyebrow','조건을 연결해 추론하기'),node('h3',null,task.prompt));
+    function taskFeedback(){const choice=applications.get(l.id);if(choice===undefined)return;for(const [k,b]of [...options.children].entries()){b.disabled=true;b.setAttribute('aria-pressed',String(k===choice));}response.className='check-feedback'+(choice===task.answer?' correct':'');response.textContent=`${choice===task.answer?'맞습니다.':'풀이를 비교해보세요.'} 내 선택: ${task.options[choice]} · 기준: ${task.options[task.answer]}. ${task.reason}`;}
+    task.options.forEach((text,k)=>options.append(button(text,()=>{if(applications.has(l.id))return;applications.set(l.id,k);taskFeedback();},'learn-choice')));application.append(options,response,node('p','small','첫 선택 뒤 풀이를 비교합니다. 이 도전은 현재 화면에만 남습니다.'));taskFeedback();article.append(application);
     article.append(node('p','lesson-next',l.next));
     const actions=node('div','lesson-actions');if(i>0)actions.append(button('← 이전 개념',()=>show(i-1)));actions.append(button('관련 문제 풀기',()=>onPractice(l.category), 'primary'));if(i+1<LESSONS.length)actions.append(button('다음 개념 →',()=>show(i+1)));article.append(actions);
     const sources=node('details','lesson-sources');sources.append(node('summary',null,'원문과 더 읽기'));for(const [j,url] of l.sources.entries()){const a=node('a',null,`OpenStax Chemistry 2e · 관련 단원 ${j+1} ↗`);a.href=url;a.target='_blank';a.rel='noopener noreferrer';sources.append(a);}article.append(sources);

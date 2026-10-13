@@ -1,5 +1,17 @@
 # Verification — 2026-10-09
 
+## 2026-10-13 자동 구현 — 통합 인계
+
+- SOURCE VERIFIED: architecture.md > requirements.md > README.md, docs/decisions.md, 제공된 AGENTS, .gitattributes/package.json, learning/learning-ui/model/app/index와 관련 테스트·check/serve를 전체 확인했습니다. api-spec.md/저장소 AGENTS.md는 없습니다. 저장소 전체는 PARTIAL: 사진/manifest/원소 스냅샷·수집기·보조 문서는 목록 후 이 작업 관련 경로를 선택했습니다. 모든 사진 원본을 이번에 재관찰한 것으로 주장하지 않습니다.
+- BUG: 기록 JSON 불러오기에서 save 실패 안내를 무조건 성공 안내가 덮었습니다. 격리 브라우저에서 setItem 실패를 주입한 회귀 검사가 먼저 `학습 기록을 불러왔습니다.`로 실패했습니다. save 결과를 반환해 성공/화면만 불러오기 안내로 나눈 뒤 tools/qa-import.js PASS. 실제 기존 12답 기록은 바이트 동일하게 보존되며 새로고침 후 answered=12입니다. 잘못된 기록을 복구/삭제하거나 저장 키를 바꾸지 않습니다.
+- CONTENT/UI: 10단원의 추가 추론 도전, 첫 선택/기준/근거, 단원을 오가도 첫 선택 유지. O/O²⁻, N/O 예외, Fe³⁺, 동위원소+이온, 역과정 결합 에너지, 동소체와 관측 조건을 다룹니다. 현재 페이지 최대 10선택만 메모리에 유지하며 기본 확인/퀴즈 성적·기록에 합산하지 않습니다. UI change: YES. 개념 출처는 learning-provenance.md.
+- LOCAL: npm test **19/19 PASS**, 실패/skip/todo 0. 기존 36,000 quiz cases·118전자 수·중성1–30/지원 이온 Pauli/Hund·Cr/Cu/Fe 예외·수소1s·사진 manifest/재사용 경계 검사 유지. npm run check **PASS: 114 public files, 118 reviewed elements, 97 photographed elements / 100 licensed files, 87 specimen / 10 observations, 89 crystal elements**. 사진/원소/결정/attributions/라이선스 파일은 변경하지 않았고 모든 기존 사진 해시 검사가 통과했습니다.
+- ACTUAL BROWSER: 별도 QA 세션, http://127.0.0.1:52047/element-atlas/ (초기 실패 재현은 자체 loopback). 10개 도전, 틀린 첫 선택→단원 이동→복귀 후 선택 유지, 버튼 재선택 차단, 학습 전후 자체/공유 저장 동일 PASS. Fe³⁺ 3d⁵·홀전자5, 실제 철 사진 로드/원본·라이선스 캡션, 실제 1단계 이온12문제를 화면의 Z−q로 계산해 12/12, 기록 JSON 실제 다운로드와 새로고침 지속 PASS. 1440×1000 / 390×844 / 320×780 변경 패널의 페이지 가로 넘침 0, 관측한 page errors/console errors 0. 캡처 육안 확인. 첫 QA가 존재하지 않는 6문제 옵션을 요청해 멈췄고 실제 제공하는 12문제로 교정하여 전체 흐름을 통과했습니다.
+- CAPTURE/SELECTORS: ignored `output/playwright/qa-20261013/application-1440.png`, `application-390.png`, `application-320.png`, `iron-detail.png`. 1단원에서 잘못된 첫 답을 고른 `.application-check`의 선택/기준/근거 상태, 철 상세는 `#element-dialog`와 실제 `#element-detail img`. 단원은 `[data-lesson=charge]` 등으로 이동합니다. QA 스크립트/다운로드는 같은 폴더; 실패 회귀 실행은 `playwright-cli -s=<isolated-session> run-code --filename tools/qa-import.js`.
+- CHANGED FILES: README.md, dist/src/app.js, dist/src/learning.js, dist/src/learning-ui.js, tools/qa-import.js(new), docs/decisions.md, docs/learning-provenance.md(new), docs/verification.md.
+- FINAL FILE CHECK: 변경 텍스트8개 UTF-8 no BOM/CRLF, git diff --check PASS. Node v22.23.2. 자체 QA 브라우저/임시 서버만 종료했으며 메인 통합 서버는 유지했습니다.
+- LIMITS: Chromium의 위 경로만 확인했습니다. 사진 100장 전체 UI 재순회, 모든 퀴즈 난이도 E2E, 다른 브라우저/실제 하드웨어, 물리적 표본 분석·독립 전문가 검토·최신 연구 전체 조사 NOT_RUN. 기존 안전/고립 이온 모형·사진 관측 분류를 유지합니다. 갤러리/미리보기/REMOTE_CI/LIVE는 메인이 확인하며 이 세션은 커밋·푸시·배포·갤러리 편집·에이전트 생성 없이 완료했습니다.
+
 ## 2026-10-10 개념 학습 경로 — LOCAL
 
 - SOURCE VERIFIED: architecture/requirements/README/decisions, 기존 원소·문제·사진 UI와 이번 학습 모듈/테스트/정적 검사를 검토했습니다. 기존 118원소 수치·97종 사진 100장·결정 데이터는 변경하지 않았습니다. OpenStax Chemistry 2e의 원자·양자·전자배치·주기율·결합·물질 상태 단원을 근거로 한국어 설명과 확인 문제를 자체 작성했습니다. 원문 기출문제를 복사하지 않았습니다.
